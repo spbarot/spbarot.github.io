@@ -1,8 +1,7 @@
 # About Me
-My name is Jason Russo, a current M.Eng student in ECE at Cornell University. This semester, I will be building a robot as a part of ECE 4960: Fast Robots. Check back at this site for updates on my project!
+Swapnil Barot is a current Master of Engineering student at Cornell University majoring in Electrical and Computer Engineeering. He received his Bachelors of Science Degree in Electrical and Computer Engineering from New York Institute of Technology. Swapnil's area of interests include embedded systems, microcontrollers, hardware, and power systems. Swapnil can be reached at spb228@cornell.edu.
 
-
-<img src="./images/SwapnilBarot.jpg" width="384" height="288" alt="hi" class="inline"/>
+<img src="./images/SwapnilBarot.jpg" width="300" height="300" alt="hi" class="inline"/>
 
 ## Course Description:
 

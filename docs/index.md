@@ -4,7 +4,7 @@ Swapnil Barot is a current Master of Engineering student at Cornell University m
 <img src="./images/spb.jpg" width="300" height="300" alt="hi" class="inline"/>
 
 ## Course Description:
-ECE 5960 - Design and Implementation of Fast Robots focuses on systems level design and implementation of dynamic autonomous robots. The course revolves around designing and building a fast autonomous car, while exploring reactive control on an embedded processor, sensors, dynamic behaviors, and acting forces. The topics covered include embedded systems design using C and Pythong, robot controls, sensors (passive/active), signal processing and filtering, communication (bluetooth, i2C, serial), and planning and search algorithms. 
+ECE 5960 - Design and Implementation of Fast Robots focuses on systems level design and implementation of dynamic autonomous robots. The course revolves around designing and building a fast autonomous car, while exploring reactive control on an embedded processor, sensors, dynamic behaviors, and acting forces. The topics covered include embedded systems design using C and Python, robot controls, sensors (passive/active), signal processing and filtering, communication (bluetooth, i2C, serial), and planning and search algorithms. 
 
 ## Labs:
 [Lab 1 - Artemis](./labs/lab1.md) <br/>

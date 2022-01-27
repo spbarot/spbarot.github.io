@@ -1,8 +1,11 @@
 ---
 title: ECE 5960 - Design and Implementation of Fast Robots
 ---
-# Author: Swapnil Barot (NetID: spb228)
 
+---
+# Author: Swapnil Barot (NetID: spb228)
+---
+xxxxxxxxxxxxxxxxx
 ## About Me
 Swapnil Barot is a current Master of Engineering student at Cornell University majoring in Electrical and Computer Engineeering. He received his Bachelor of Science in Electrical and Computer Engineering from New York Institute of Technology. Swapnil's area of interests include embedded systems, microcontrollers, hardware, and power systems. Swapnil can be reached at spb228@cornell.edu.
 

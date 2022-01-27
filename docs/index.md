@@ -1,5 +1,6 @@
 ---
-title: test2
+title: ECE 5960 - Design and Implementation of Fast Robots
+Description: Author: Swapnil Barot (NetID: spb228)
 ---
 
 ## About Me

@@ -1,5 +1,5 @@
 ---
-title: Lab 1 - Artemis
+title: Lab 1 - Artemis Processor
 ---
 Lab content shall appear here in the future.
 

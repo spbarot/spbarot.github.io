@@ -1,6 +1,8 @@
 ---
 title: Lab 1 - Artemis Board
 ---
+# Author: Swapnil Barot (NetID: spb228)
+---
 
 [Return to Main Page](https://spbarot.github.io/)
 

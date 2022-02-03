@@ -1,6 +1,9 @@
 ---
 title: Lab 1 - Artemis Board
 ---
+
+[Return to Main Page](https://spbarot.github.io/)
+
 ## I. Objective
 
 The goal of this lab is to configure the Sparkfun RedBoard Artemis Nano Board (microcontroller) and the Arduino IDE. Upon verifying the system functionality, the experimenters shall compile and upload example code (with modifications) such as Blink It Up, Serial, AnalogRead, and MicrophoneOutput. Lastly, ECE 5960 students shall develop a program to enable the on-board LED when the microphone senses a whistle. Refer to the Sparkfun RedBoard Artemis Nano datasheet and Artemis setup instructions in the appendix section for preliminary information required for the lab. 
@@ -29,7 +32,7 @@ The Blink program enables the on-board blue LED. As per the algorithm, the LED i
   
 ---
 
-  ### Serial Example
+  #### Serial Example
   
   Select File, Examples, Apollo 3, and open Example04_Serial. 
 The serial program verifies the functionality of the serial communication, serial monitor and serial port. The program prints out an incrementing print statement and prompts the user to enter data which echoes in the serial monitor. 
@@ -37,7 +40,7 @@ The serial program verifies the functionality of the serial communication, seria
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QihvJWqAIBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
-  ### AnalogRead Example
+  #### AnalogRead Example
   
   Select File, Examples, Apollo 3, and open Example02_AnalogRead.
 AnalogRead takes advantage of the on-board ADC (analog to digital converter) and can read analog voltages from 0V to 2V. The ADC channel measures the internal die temperature, VCC voltage, and VSS voltage. Additionally, the program is designed to fade the on-board LED to match the voltage reading on the respective analog pin. 
@@ -46,7 +49,7 @@ AnalogRead takes advantage of the on-board ADC (analog to digital converter) and
 
 ---
 
-  ### MicrophoneOutput Example
+  #### MicrophoneOutput Example
   
   Select File, Examples, PDM, and open Example1_MicrophoneOutput.
 MicrophoneOutput is designed to enable the PDM microphone to continuously read input and output the loudest frequency detected. 
@@ -55,7 +58,7 @@ MicrophoneOutput is designed to enable the PDM microphone to continuously read i
 
 ---
 
-  ### Microphone_LED
+  #### Microphone_LED
   
   Microphone_LED is a program that enables the on-board LED when the microphone senses a whistle. To carryout this design intent, an if/else statement is utilized that turns the LED on if a frequency of > 4000 Hz is detected and turns the LED off if the recorded frequency is <=4000 Hz. Refer to the appendix section for the code utilized in Microphone_LED. 
   
@@ -312,3 +315,10 @@ void printPDMConfig(void)
 1. [SparkFun RedBoard Artemis Nano]( https://www.sparkfun.com/products/15443)
 
 2. [Setup Instructions]( https://learn.sparkfun.com/tutorials/artemis-development-with-arduino?_ga=2.30055167.1151850962.1594648676-1889762036.1574524297&_gac=1.19903818.1593457111.Cj0KCQjwoub3BRC6ARIsABGhnyahkG7hU2v-0bSiAeprvZ7c9v0XEKYdVHIIi_-J-m5YLdDBMc2P_goaAtA4EALw_wcB)
+
+---
+
+[Return to Main Page](https://spbarot.github.io/)
+
+
+

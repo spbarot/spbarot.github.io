@@ -73,13 +73,15 @@ The experimenters successfully configured the Artemis board and the Arduino IDE 
 
 ## V. Code Appendix
 
-'''c++
+```
+
 
 test
 test2
 test3
 
-'''
+
+```
 
 ---
 

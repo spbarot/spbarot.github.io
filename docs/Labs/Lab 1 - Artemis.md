@@ -74,8 +74,6 @@ MicrophoneOutput is designed to enable the PDM microphone to continuously read i
 
 The experimenters successfully configured the Artemis board and the Arduino IDE while running several example programs to verify the system functionality. Knowledge gained in this lab with respect to system setup, microcontroller familiarity, on-board peripherals, and programming will assist the experiments in future labs. Most of the experiment was quite smooth, except for AnalogRead, which contained bugs that did not allow the software to present the computed/processed data. Instead, the program prints raw data in the form of bits. The lab writeup and the given references proved to be helpful throughout the entire lab. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FCxQfeuSuMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ---
 
 ## V. Code Appendix

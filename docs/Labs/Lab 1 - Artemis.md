@@ -44,7 +44,9 @@ The experimenters successfully configured the Artemis board and the Arduino IDE 
 ---
 ## V. Appendix
   ### V.I. Code
-  ```c
+  
+  ```
+  
   /* Author: Nathan Seidle
   Editor: Swapnil Barot (spb228)
   Created: July 24, 2019

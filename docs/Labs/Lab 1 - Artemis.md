@@ -11,7 +11,7 @@ The goal of this lab is to configure the Sparkfun RedBoard Artemis Nano Board (m
 
 ## III. Procedure/Design/Results
 
-  ### III.I. System Setup
+  ### System Setup
   First download and install the Arduino IDE. Then, Interconnect the Artemis and the computer via the USB cable. Once the program is installed, hover to Tools and select Boards Manager. Download and install the Sparkfun Apollo 3 Boards package. 
 
   ### III.II. Blink It Up Example
@@ -21,7 +21,9 @@ The Blink program enables the on-board blue LED. As per the algorithm, the LED i
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FCxQfeuSuMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   ### III.III. Serial Example
-  
+  Select File, Examples, Apollo 3, and open Example04_Serial. 
+The serial program verifies the functionality of the serial communication, serial monitor and serial port. The program prints out an incrementing print statement and prompts the user to enter data which echoes in the serial monitor. 
+
 
   ### III.IV. AnalogRead Example
   

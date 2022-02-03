@@ -11,8 +11,9 @@ The goal of this lab is to configure the Sparkfun RedBoard Artemis Nano Board (m
 ---
 ## III. Procedure/Design/Results
 
-### System Setup
-  First download and install the Arduino IDE. Then, Interconnect the Artemis and the computer via the USB cable. Once the program is installed, hover to Tools and select Boards Manager. Download and install the Sparkfun Apollo 3 Boards package. 
+### System Setup:
+
+First download and install the Arduino IDE. Then, Interconnect the Artemis and the computer via the USB cable. Once the program is installed, hover to Tools and select Boards Manager. Download and install the Sparkfun Apollo 3 Boards package. 
 ---
   ### III.II. Blink It Up Example
   Once the system is setup, select File, Examples, 01. Basics and open Blink. Analyze the software and select Upload on the toolbar. 

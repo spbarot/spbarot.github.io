@@ -13,9 +13,9 @@ The goal of this lab is to configure the Sparkfun RedBoard Artemis Nano Board (m
 ---
 ## II. Materials/Software
 
-1. 1x SparkFun RedBoard Artemis Nano
-2. 1x USB A to C Cable
-3. Arduino IDE (Software)
+1) 1x SparkFun RedBoard Artemis Nano
+2) 1x USB A to C Cable
+3) Arduino IDE (Software)
 
 ---
 ## III. Procedure/Design/Results
@@ -319,9 +319,9 @@ void printPDMConfig(void)
 
 ## VI. References
 
-1. [SparkFun RedBoard Artemis Nano]( https://www.sparkfun.com/products/15443)
+1) [SparkFun RedBoard Artemis Nano]( https://www.sparkfun.com/products/15443)
 
-2. [Setup Instructions]( https://learn.sparkfun.com/tutorials/artemis-development-with-arduino?_ga=2.30055167.1151850962.1594648676-1889762036.1574524297&_gac=1.19903818.1593457111.Cj0KCQjwoub3BRC6ARIsABGhnyahkG7hU2v-0bSiAeprvZ7c9v0XEKYdVHIIi_-J-m5YLdDBMc2P_goaAtA4EALw_wcB)
+2) [Setup Instructions]( https://learn.sparkfun.com/tutorials/artemis-development-with-arduino?_ga=2.30055167.1151850962.1594648676-1889762036.1574524297&_gac=1.19903818.1593457111.Cj0KCQjwoub3BRC6ARIsABGhnyahkG7hU2v-0bSiAeprvZ7c9v0XEKYdVHIIi_-J-m5YLdDBMc2P_goaAtA4EALw_wcB)
 
 ---
 

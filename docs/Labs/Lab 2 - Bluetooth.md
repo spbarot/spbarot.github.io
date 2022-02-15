@@ -9,7 +9,9 @@ title: Lab 2 – Bluetooth
 ## I. Objective
 
 The goal of this lab is to configure and establish Bluetooth communication between the computer and the Artemis board. Lab tasks involve installing and configuring a virtual environment, python, and Jupyter, configuring Bluetooth communication between the computer and the Artemis board, sending and receiving string/float values, and creating a notification handler. 
+    
 ---
+
 ## II. Materials/Software
 
 1. 1x SparkFun RedBoard Artemis Nano
@@ -19,6 +21,7 @@ The goal of this lab is to configure and establish Bluetooth communication betwe
 4. JupyterLab (Software)
 
 ---
+
 ## III. Procedure/Design/Results
 
 #### System Setup

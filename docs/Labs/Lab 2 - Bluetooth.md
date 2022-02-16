@@ -8,8 +8,8 @@ title: Lab 2 – Bluetooth
 
 ## I. Objective
 
-The goal of this lab is to configure and establish Bluetooth communication between the computer and the Artemis board. Lab tasks involve installing and configuring a virtual environment, python, and Jupyter, configuring Bluetooth communication between the computer and the Artemis board, sending and receiving string/float values, and creating a notification handler. 
-    
+The goal of this lab is to understand the Bluetooth implementation used to interconnect the computer (off-board computing) and the Artemis board (on-board computing), while configuring and establishing Bluetooth communication. Lab tasks involve installing and configuring a virtual environment, python, and Jupyter, configuring Bluetooth communication between the computer and the Artemis board, sending, and receiving string/float values, and creating a notification handler. 
+
 ---
 
 ## II. Materials/Software
@@ -21,7 +21,6 @@ The goal of this lab is to configure and establish Bluetooth communication betwe
 4. JupyterLab (Software)
 
 ---
-
 ## III. Procedure/Design/Results
 
 #### System Setup
@@ -31,7 +30,16 @@ First download/upgrade Python 3 and pip. Then install a virtual environment. Ins
 ---
 
 #### Task 1 – Send an ECHO Command
-  
+
+The first task involves sending an “ECHO” command with a string value from the computer to the Artemis. The Artemis then receives the command and sends an augmented string back to the computer. As show in the images below, CMD.ECHO is utilized to send a string (Hello SPB’s Robot) to the robot (Artemis). The Artemis then sends the string back to the computer (SPB’s Robot Says -> Hello SPB’s Robot (Received From Robot)).   
+ 
+<img src="./images/Lab2/Task1_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+<img src="./images/Lab2/Task1_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+<img src="./images/Lab2/Task1_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+
 
 ---
 
@@ -52,8 +60,11 @@ First download/upgrade Python 3 and pip. Then install a virtual environment. Ins
 #### ECE 5960 - Task 1 – Effective Data Rate
   
 ---
+
 #### ECE 5960 - Task 2 – Reliability
 
+
+---
 
 
 ## IV. Conclusion

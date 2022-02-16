@@ -33,39 +33,58 @@ First download/upgrade Python 3 and pip. Then install a virtual environment. Ins
 
 The first task involves sending an “ECHO” command with a string value from the computer to the Artemis. The Artemis then receives the command and sends an augmented string back to the computer. As show in the images below, CMD.ECHO is utilized to send a string (Hello SPB’s Robot) to the robot (Artemis). The Artemis then sends the string back to the computer (SPB’s Robot Says -> Hello SPB’s Robot (Received From Robot)).   
  
-<img src="./images/Lab2/Task1_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="./images/Lab2/Task1_ino.jpg" width="300" height="300" alt="hi" class="inline"/>
 
 <img src="./images/Lab2/Task1_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
 
 <img src="./images/Lab2/Task1_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
 
 
-
 ---
 
 #### Task 2 – Send Three Floats
+
+Task 2 involves sending three float values to the Artemis board using the SEND_THREE_FLOATS command. “ble.send_command” is utilized to transmit three float values to the Artemis. The Artemis extracts the values using “robot_cmd.get_next_value”. The images below display the program and the serial output in detail.  
+
+<img src="./images/Lab2/Task2_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+<img src="./images/Lab2/Task2_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+<img src="./images/Lab2/Task2_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
   
 
 ---
 
 #### Task 3 – Notification Handler
+ 
+A notification handler is setup to receive float values from the Artemis board. In the callback function, a float value is stored as a global variable such that it is updated every time the characteristic value changes. This eliminates the need to utilize the receive_float() function. 
+
+<img src="./images/Lab2/Task3_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+---
+
+#### Task 4 – BLEFloat VS BLEString
+
+Receiving a float value in python using receive_float() / BLEFloatCharacteristic enables python to directly receive a float value as a byte array (as transmitted by Artemis). On the other hand, using receive_string() / BLECStringCharacteristic forces python to convert the characters to floats in a byte array. The first option (float) requires 4 bytes (per float) while the second option (string) requires 1 byte (per character). Thus, the float values are more memory expensive, however, can lead to more precision.  It shall be noted that both options produce similar results. 
+
+---
+
+#### ECE 5960 Additional Tasks - Task 1 – Effective Data Rate
   
 
----
+<img src="./images/Lab2/Task5_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-#### Task 4 – BLE Float VS String
-  
----
+<img src="./images/Lab2/Task5_output.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-#### ECE 5960 - Task 1 – Effective Data Rate
-  
----
-
-#### ECE 5960 - Task 2 – Reliability
+<img src="./images/Lab2/Task5_graph.JPG" width="300" height="300" alt="hi" class="inline"/>
 
 
 ---
+#### ECE 5960 Additional Tasks - Task 2 – Reliability
 
+<img src="./images/Lab2/Task5_output.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+---
 
 ## IV. Conclusion
 
@@ -73,8 +92,6 @@ The first task involves sending an “ECHO” command with a string value from t
 ---
 
 ## V. Code Appendix
-
-#### 
 
 
 ```

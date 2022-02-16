@@ -35,9 +35,9 @@ The first task involves sending an “ECHO” command with a string value from t
  
 <img src="../images/Lab2/Task1_ino.JPG" width="300" height="100" alt="image1" class="inline"/>
 
-<img src="../images/Lab2/Task1_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task1_serial.JPG" width="300" height="10" alt="hi" class="inline"/>
 
-<img src="../images/Lab2/Task1_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task1_jupyter.JPG" width="300" height="70" alt="hi" class="inline"/>
 
 
 ---
@@ -48,9 +48,9 @@ Task 2 involves sending three float values to the Artemis board using the SEND_T
 
 <img src="../images/Lab2/Task2_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-<img src="../images/Lab2/Task2_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task2_serial.JPG" width="300" height="10" alt="hi" class="inline"/>
 
-<img src="../images/Lab2/Task2_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task2_jupyter.JPG" width="300" height="30" alt="hi" class="inline"/>
   
 
 ---
@@ -76,7 +76,7 @@ This task involves sending a message from the computer to receive a reply from t
 
 <img src="../images/Lab2/Task5_output.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-<img src="../images/Lab2/Task5_graph.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task5_graph.JPG" width="300" height="200" alt="hi" class="inline"/>
 
 
 ---

@@ -35,9 +35,9 @@ The first task involves sending an “ECHO” command with a string value from t
  
 <img src="../images/Lab2/Task1_ino.JPG" width="300" height="300" alt="image1" class="inline"/>
 
-<img src="./images/Lab2/Task1_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task1_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-<img src="./images/Lab2/Task1_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task1_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
 
 
 ---
@@ -46,11 +46,11 @@ The first task involves sending an “ECHO” command with a string value from t
 
 Task 2 involves sending three float values to the Artemis board using the SEND_THREE_FLOATS command. “ble.send_command” is utilized to transmit three float values to the Artemis. The Artemis extracts the values using “robot_cmd.get_next_value”. The images below display the program and the serial output in detail.  
 
-<img src="./images/Lab2/Task2_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task2_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-<img src="./images/Lab2/Task2_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task2_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-<img src="./images/Lab2/Task2_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task2_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
   
 
 ---
@@ -59,7 +59,7 @@ Task 2 involves sending three float values to the Artemis board using the SEND_T
  
 A notification handler is setup to receive float values from the Artemis board. In the callback function, a float value is stored as a global variable such that it is updated every time the characteristic value changes. This eliminates the need to utilize the receive_float() function. 
 
-<img src="./images/Lab2/Task3_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task3_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
 
 ---
 
@@ -72,11 +72,11 @@ Receiving a float value in python using receive_float() / BLEFloatCharacteristic
 #### ECE 5960 Additional Tasks - Task 1 – Effective Data Rate
 This task involves sending a message from the computer to receive a reply from the Artemis, while calculating the times and the data rate of each of the events. To measure the data rate, “performance_measurement” function is utilized, which transmits and receives strings while keeping track of the time. The subsequent for-loop adds to the string in each iteration, increasing the byte size of the package. This information is then captured and computed to capture the data rate (bytes/second), as shown in the images below. 
 
-<img src="./images/Lab2/Task5_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task5_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-<img src="./images/Lab2/Task5_output.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task5_output.JPG" width="300" height="300" alt="hi" class="inline"/>
 
-<img src="./images/Lab2/Task5_graph.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task5_graph.JPG" width="300" height="300" alt="hi" class="inline"/>
 
 
 ---
@@ -84,7 +84,7 @@ This task involves sending a message from the computer to receive a reply from t
 
 The reliability of the data transfer is also tested. To test the reliability of the system, data was sent at a much higher rate from the robot (Artemis) to the computer. This was accomplished by shortening the Arduino interval time to 100 milliseconds (500 milliseconds is typical), and by increasing the baud rate to 1000000 from 115200. As shown in the image below, the output is very similar to the Effective Data Rate task output, signaling that the higher data rate has no significant effect on the reliability. 
 
-<img src="./images/Lab2/Task5_output.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab2/Task5_output.JPG" width="300" height="300" alt="hi" class="inline"/>
 
 ---
 

@@ -33,7 +33,7 @@ First download/upgrade Python 3 and pip. Then install a virtual environment. Ins
 
 The first task involves sending an “ECHO” command with a string value from the computer to the Artemis. The Artemis then receives the command and sends an augmented string back to the computer. As show in the images below, CMD.ECHO is utilized to send a string (Hello SPB’s Robot) to the robot (Artemis). The Artemis then sends the string back to the computer (SPB’s Robot Says -> Hello SPB’s Robot (Received From Robot)).   
  
-<img src="./images/Task1_ino.jpg" width="300" height="300" alt="hi" class="inline"/>
+<img src=".https://github.com/spbarot/spbarot.github.io/tree/main/docs/images/Task1_ino.jpg" width="300" height="300" alt="hi" class="inline"/>
 
 <img src="./images/Lab2/Task1_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
 
@@ -91,6 +91,7 @@ The reliability of the data transfer is also tested. To test the reliability of 
 ## IV. Conclusion
 
 The goals of this lab were successfully satisfied as the experimenters utilized Bluetooth framework to interconnect the computer and the Artemis board. Knowledge gained in this lab will assist in utilizing Bluetooth in the future labs. The experiment was quite smooth, and the given references/guideline seemed to be very helpful. 
+
 ---
 
 ## V. Code Appendix
@@ -101,8 +102,8 @@ Please refer to respective tasks in Section III - Procedure/Design/Results for t
 
 ## VI. References
 
-1) [ECE 5960 – Lab 2 Guideline](https://cei-lab.github.io/ECE4960-2022/Lab2.html)
-2) [Jupyter Lab Tutorial] (https://cei-lab.github.io/ECE4960-2022/tutorials/jupyter_notebooks.html)
+1. [ECE 5960 – Lab 2 Guideline](https://cei-lab.github.io/ECE4960-2022/Lab2.html)
+2. [Jupyter Lab Tutorial](https://cei-lab.github.io/ECE4960-2022/tutorials/jupyter_notebooks.html)
 
 ---
 

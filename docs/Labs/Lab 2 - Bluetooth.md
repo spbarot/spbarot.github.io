@@ -33,7 +33,7 @@ First download/upgrade Python 3 and pip. Then install a virtual environment. Ins
 
 The first task involves sending an “ECHO” command with a string value from the computer to the Artemis. The Artemis then receives the command and sends an augmented string back to the computer. As show in the images below, CMD.ECHO is utilized to send a string (Hello SPB’s Robot) to the robot (Artemis). The Artemis then sends the string back to the computer (SPB’s Robot Says -> Hello SPB’s Robot (Received From Robot)).   
  
-<img src="./docs/images/Task1_ino.jpg" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Task1_ino.jpg" width="300" height="300" alt="image1" class="inline"/>
 
 <img src="./images/Lab2/Task1_serial.JPG" width="300" height="300" alt="hi" class="inline"/>
 

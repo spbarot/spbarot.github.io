@@ -122,7 +122,8 @@ Serial.print((atan2(sensor->accY(),sensor->accZ()))*180/M_PI);
 SERIAL_PORT.print(" ], Pitch [ ");
 Serial.print((atan2(sensor->accX(),sensor->accZ()))*180/M_PI);
 ```
-<img src="../images/ Lab3/IMU_2_pitchroll.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+<img src="../images/Lab3/IMU_2_pitchroll.JPG" width="800" height="500" alt="hi" class="inline"/>
 
 ---
 
@@ -151,9 +152,12 @@ The pitch, roll, and yaw of the gyroscope was calculated by using the equations 
   SERIAL_PORT.println();
 ```
 
-<img src="../images/ Lab3/IMU_3_gyro_rollpitchyaw.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab3/IMU_3_gyro_rollpitchyaw.JPG" width="800" height="500" alt="hi" class="inline"/>
 
-<img src="../images/ Lab3/IMU_4_gyro_graph.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+
+
+<img src="../images/Lab3/IMU_4_gyro_graph.JPG" width="800" height="500" alt="hi" class="inline"/>
 
 ---
 
@@ -184,7 +188,9 @@ Using a complementary filter of 0.05 and combining the accelerometer and gyrosco
 }
 ``` 
 
-<img src="../images/ Lab3/IMU_5_gyro_filter.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+<img src="../images/Lab3/IMU_5_gyro_filter.JPG" width="800" height="500" alt="hi" class="inline"/>
+
 
 ---
 

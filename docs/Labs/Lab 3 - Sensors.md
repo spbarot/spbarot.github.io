@@ -135,7 +135,7 @@ Tapping the sensor resulted in spontaneous spikes in the data that swiftly dampe
 The pitch, roll, and yaw of the gyroscope was calculated by using the equations discussed in the lectures. Since the gyroscope measures the angular velocities, integration of those values will provide the tilt angles. The output of the gyroscope had much less noise compared to the output of the accelerometer. It can also be noticed that the gyroscope readings tend to drift instead of stabilizing at a particular point. This can be caused due to the noise build up in the gyroscope. Lastly, the gyroscope also requires initial value to output sensor readings. 
 
 ```
-gyro_X_angle = gyro_X_angle - sensor->gyrX() * dt;
+  gyro_X_angle = gyro_X_angle - sensor->gyrX() * dt;
   gyro_Y_angle = gyro_Y_angle - sensor->gyrY() * dt;
   gyro_z_angle = gyro_z_angle - sensor->gyrZ() * dt;
   SERIAL_PORT.print("Gyro Roll:");

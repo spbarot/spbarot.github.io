@@ -65,11 +65,12 @@ The TOF sensor is tested using the “ReadDistance” program found at File -> E
 #### Task 4 – Time of Flight Sensors (Enable Both TOF Sensors)
 
 To enable both TOF sensors, I strategized to interconnect one TOF sensor’s shutdown pin to a GPIO in the Artemis. This will allow for the program to turn off one TOF sensor, change its address (to 0x30), and turn it back it back on. Below is the code that handles this scheme. 
-‘’’
+
+```
 digitalWrite(A2, LOW); //Turn TOF sensor off
 distanceSensor.setI2CAddress(30); //Set the new I2C address
 digitalWrite(A2, HIGH);//Turn TOF sensor on
-‘’’
+```
 
 <img src="../images/Lab3/TOF_3_twosensors.JPG" width="300" height="300" alt="image1" class="inline"/>
 
@@ -82,11 +83,12 @@ The TOF sensors utilized in this lab use infrared light (lasers) to determine de
 
 #### Task 6 – Time of Flight Sensors Additional Tasks (Timing Budget)
 
-Timing budget of a sensor is described as the programmed time needed by the sensor to perform and report measurement data. The TOF sensor data sheet states that the “setTimingBudget” function sets the timing to perform one range measurement. The “setInterMeasurementPeriod” function sets the delay between two ranging operations. Setting the timing budget to a low value will ensure a quicker reading. Setting the intermeasurement period to a low value will ensure less time between two readings. Since the robot is relatively fast, it would be advantageous to have faster readings so that the environment can be mapped quicker. Therefore, I plan on using a timing budget of 20ms, and a intermeasurement period of 60ms. 
-‘’’
+ Timing budget of a sensor is described as the programmed time needed by the sensor to perform and report measurement data. The TOF sensor data sheet states that the “setTimingBudget” function sets the timing to perform one range measurement. The “setInterMeasurementPeriod” function sets the delay between two ranging operations. Setting the timing budget to a low value will ensure a quicker reading. Setting the intermeasurement period to a low value will ensure less time between two readings. Since the robot is relatively fast, it would be advantageous to have faster readings so that the environment can be mapped quicker. Therefore, I plan on using a timing budget of 20ms, and a intermeasurement period of 60ms. 
+
+```
   distanceSensor.setTimingBudgetInMs(60);
   distanceSensor.setIntermeasurementPeriod(20);
-‘’’
+```
 ---
 
 #### Task 7 – Time of Flight Sensors Additional Tasks (Signal and Sigma)
@@ -112,12 +114,12 @@ The program found at File -> Examples -> SparkFun_ICM-20948_ArduinoLibrary-maste
 
 Yaw, pitch and roll are the angles of rotations around the X, Y, and Z axis which are used to calculate the tilt of the sensor. The equations from the class were utilized to calculate the pitch and the roll of the IMU. 
 
-‘’’
+```
 SERIAL_PORT.print("Roll [ ");
 Serial.print((atan2(sensor->accY(),sensor->accZ()))*180/M_PI);
 SERIAL_PORT.print(" ], Pitch [ ");
 Serial.print((atan2(sensor->accX(),sensor->accZ()))*180/M_PI);
-‘’’
+```
 <img src="../images/ Lab3/IMU_2_pitchroll.JPG" width="300" height="300" alt="hi" class="inline"/>
 
 ---
@@ -132,7 +134,7 @@ Tapping the sensor resulted in spontaneous spikes in the data that swiftly dampe
 
 The pitch, roll, and yaw of the gyroscope was calculated by using the equations discussed in the lectures. Since the gyroscope measures the angular velocities, integration of those values will provide the tilt angles. The output of the gyroscope had much less noise compared to the output of the accelerometer. It can also be noticed that the gyroscope readings tend to drift instead of stabilizing at a particular point. This can be caused due to the noise build up in the gyroscope. Lastly, the gyroscope also requires initial value to output sensor readings. 
 
-‘’’
+```
 gyro_X_angle = gyro_X_angle - sensor->gyrX() * dt;
   gyro_Y_angle = gyro_Y_angle - sensor->gyrY() * dt;
   gyro_z_angle = gyro_z_angle - sensor->gyrZ() * dt;
@@ -145,7 +147,7 @@ gyro_X_angle = gyro_X_angle - sensor->gyrX() * dt;
   SERIAL_PORT.print("Gyro Yaw:");
   printFormattedFloat(gyro_Z_angle,3,2);
   SERIAL_PORT.println();
-‘’’
+```
 
 <img src="../images/ Lab3/IMU_3_gyro_rollpitchyaw.JPG" width="300" height="300" alt="hi" class="inline"/>
 
@@ -157,7 +159,7 @@ gyro_X_angle = gyro_X_angle - sensor->gyrX() * dt;
 
 Using a complementary filter of 0.05 and combining the accelerometer and gyroscope readings, precise roll and pitch angles were computed as seen below. Sensor fusion and a filter in conjunction turn out to stabilize the sensor extremely well. 
 
-‘’’
+```
   float accPitch = atan2(sensor->accX(), sensor->accZ())* 360 / (2 * M_PI);
   float accRoll = atan2(sensor->accY(), sensor->accZ()) * 360 / (2 * M_PI);
   float gyrPitch = sensor->gyrX();
@@ -178,7 +180,7 @@ Using a complementary filter of 0.05 and combining the accelerometer and gyrosco
   printFormattedFloat(roll,3,2);
   SERIAL_PORT.println();
 }
-‘’’ 
+``` 
 
 <img src="../images/ Lab3/IMU_5_gyro_filter.JPG" width="300" height="300" alt="hi" class="inline"/>
 
@@ -187,11 +189,11 @@ Using a complementary filter of 0.05 and combining the accelerometer and gyrosco
 #### Task  13 – Inertial Measurement Unit Additional Task (Magnetometer Yaw Angle)
 The magnetometer Yaw angle was calculated using the equations provided in the lab guideline. It was noticed that the Yaw angle shifts as the IMU is rotated. The magnetometer reached the lowest values when it was pointing in the North Direction. The output of the magnetometer is also robust to small changes in pitch. 
 
-‘’’
+```
 xm = myICM.magX()*cos(pitch) - myICM.magY()*sin(roll)*sin(pitch) + myICM.magZ()*cos(roll)*sin(pitch); //these were saying theta=pitch and roll=phi 
 ym = myICM.magY()*cos(roll) + myICM.magZ()*sin(roll_rad); 
 yaw = atan2(ym, xm);
-‘’’
+```
 
 ---
 

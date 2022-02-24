@@ -72,7 +72,7 @@ distanceSensor.setI2CAddress(30); //Set the new I2C address
 digitalWrite(A2, HIGH);//Turn TOF sensor on
 ```
 
-<img src="../images/Lab3/TOF_3_twosensors.JPG" width="300" height="300" alt="image1" class="inline"/>
+<img src="../images/Lab3/TOF_3_twosensors.JPG" width="500" height="300" alt="image1" class="inline"/>
 
 ---
 #### Task 5 – Time of Flight Sensors Additional Tasks (Infrared Transmission)
@@ -95,7 +95,7 @@ The TOF sensors utilized in this lab use infrared light (lasers) to determine de
 
 Signal and Sigma are two parameters the driver uses to qualify the ranging measurement. If signal or sigma are outside the typical limits, the ranging is flagged as invalid. As seen in the image below, the Range Status for certain measurements states “Signal Fail” or “Wrapped Target Fail”, indicating a bad sensor read due to exceeding Signal and Sigma limits. This feature can be useful in a fast robot, where the sensor is experiencing high velocities. Inaccurate readings can be effectively flagged and voided. 
 
-<img src="../images/Lab3/TOF_4_sigmasignal.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab3/TOF_4_sigmasignal.JPG" width="500" height="300" alt="hi" class="inline"/>
 
 ---
 
@@ -104,9 +104,11 @@ Signal and Sigma are two parameters the driver uses to qualify the ranging measu
  
 The program found at File -> Examples -> SparkFun_ICM-20948_ArduinoLibrary-master -> Examples -> Arduino -> Example1_Basics is ran and the output is displayed in the image below. The ADO_VAL value is the value of the last bit of the I2C address of the IMU. It is set to 1 by default. Since the ADR jumped is closed, the ADO_VAL should be set to 0. The IMU sensor outputs acceleration, angular velocities, and magnetic field intensities. It is noticed that when the IMU is laying flat on a surface, az is roughly equal to the Earth’s gravitational force. Ax, and Ay are roughly zero. Since the IMU is not moving the angular velocities (gyroscope readings) are also roughly zero. As the IMU is moved and rotated, the values shift instantaneously, as shown in the serial plotter image below. 
 
-<img src="../images/Lab3/IMU_1_basic.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab3/IMU_1_basic.JPG" width="800" height="500" alt="hi" class="inline"/>
 
-<img src="../images/ Lab3/IMU_2_basic_graph.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+<img src="../images/Lab3/IMU_2_basic_graph.JPG" width="800" height="500" alt="hi" class="inline"/>
+
 
 ---
 

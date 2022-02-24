@@ -16,4 +16,4 @@ ECE 5960 - Design and Implementation of Fast Robots focuses on systems level des
 [Lab 1 - Artemis](./Labs/Lab 1 - Artemis.md) <br/>
 [Lab 2 - Bluetooth](./Labs/Lab 2 - Bluetooth.md) <br/>
 [Lab 3 - Sensors](./Labs/Lab 3 - Sensors.md) <br/>
-[Lab 4 - Characterize Your Car](./Labs/Lab 3 - Characterize Your Car.md) <br/>
+[Lab 4 - Characterize Your Car](./Labs/Lab 4 - Characterize Your Car.md) <br/>

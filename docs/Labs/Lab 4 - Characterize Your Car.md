@@ -53,6 +53,9 @@ It is important to note the velocity of the robot for several reasons. First, th
 The speed of the robot was tested by checking how much time the car took to cover certain distances, with the help of a stopwatch. As seen in the image below, tape is placed on the floor to mark out 5 feet segments, totaling 20 feet. The velocity of the car is computed in the graph below based on how much time the car took to reach the four checkpoints (5, 10, 15, 20 ft).  This was done several times to achieve data average (mean). 
 It was noticed that the car tends to drift to the left when attempting a straight pathway often. This may be so due to the left the motor spinning faster or faster then the right one, causing the car to steer leftwards. This information will be helpful in the future labs as we will be able to adjust for the lack of calibration in the two motors. 
 
+<img src="../images/Lab4/speed.jpg" width="300" height="300" alt="image1" class="inline"/>
+
+
 ---
 
 #### Task 5 – Braking Distance
@@ -60,12 +63,18 @@ It was noticed that the car tends to drift to the left when attempting a straigh
 The braking distance of the car was also measured. Braking distance of the car is an important aspect to understand as it indicates how much space the car will need to come to a stop when it senses an object. If the car tends to hit the obstacles often, it may damage the robot and the on-board electronics. 
 The braking distance of the car was tested by running it at full velocity, and then abruptly pressing the back button to provide “brakes.” The distance it took to brake was measured and noted down, as seen in the images below. This was done several times to achieve data average (mean). 
 
+<img src="../images/Lab4/brake_1.jpg" width="300" height="300" alt="image1" class="inline"/>
+
+<img src="../images/Lab4/brake_2.jpg" width="300" height="300" alt="image1" class="inline"/>
+
+
 ---
 
 #### Task 6 - Stunts
 
 The robot is also capable of doing stunts. As seen in the video below, a 180-degree flop is executed by the robot, which occurs when the robot is going at full speed on a surface with high traction, and the back button is abruptly pressed, causing the robot to flip backwards. It shall be noted that this is only possible on surfaces with a lot of traction. On surfaces with low traction, the robot will decelerate and then start moving backwards, instead of flipping. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/53P32jKdcNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

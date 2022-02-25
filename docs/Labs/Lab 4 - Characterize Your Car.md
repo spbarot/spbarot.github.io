@@ -50,14 +50,14 @@ The battery life (850 mAh) of the vehicle was tested by constantly straining the
 #### Task 4 – Range of Speed
 
 It is important to note the velocity of the robot for several reasons. First, the velocity of the robot can help dictate how fast we need to sample the distance measurement (ToF sensor) in order to effectively sense objects in the robot’s path. For example, if the robot has too much velocity, it may not be able to sense the distance fast enough for object avoidance. 
-The speed of the robot was tested by checking how much time the car took to cover certain distances, with the help of a stopwatch. As seen in the image below, tape is placed on the floor to mark out 5 feet segments, totaling 20 feet. The velocity of the car is computed in the graph below based on how much time the car took to reach the four checkpoints (5, 10, 15, 20 ft).   This was done several times to achieve data average (mean). The average time it took for the car to surpass the checkpoints of (5, 10, 15, 20 ft) was (0.95, 1.38, 1.84, 2.23 seconds). This yielded in an average velocity of 2.26 meters/second for a travel of 6.096 meters (20 ft). 
+The speed of the robot was tested by checking how much time the car took to cover certain distances, with the help of a stopwatch. As seen in the image below, tape is placed on the floor to mark out 5 feet segments, totaling 20 feet. The velocity of the car is computed in the graph below based on how much time the car took to reach the four checkpoints (5, 10, 15, 20 ft).   This was done several times to achieve data average (mean). The average time it took for the car to surpass the checkpoints of (5, 10, 15, 20 ft) was (0.95, 1.38, 1.84, 2.23 seconds). This yielded in an average velocity of 2.26 meters/second for a total travel of 6.096 meters (20 ft). 
 It was noticed that the car tends to drift to the left when attempting a straight pathway often. This may be so due to the left the motor spinning faster or faster then the right one, causing the car to steer leftwards. This information will be helpful in the future labs as we will be able to adjust for the lack of calibration in the two motors. 
 
 <img src="../images/Lab4/speed.jpg" width="300" height="300" alt="image1" class="inline"/>
 
-<img src="../images/Lab4/speed_graph.JPG" width="300" height="300" alt="image1" class="inline"/>
+<img src="../images/Lab4/speed_graph.jpg" width="300" height="300" alt="image1" class="inline"/>
 
-<img src="../images/Lab4/speed_graph_2.JPG" width="300" height="300" alt="image1" class="inline"/>
+<img src="../images/Lab4/speed_graph_2.jpg" width="300" height="300" alt="image1" class="inline"/>
 
 
 ---
@@ -65,7 +65,7 @@ It was noticed that the car tends to drift to the left when attempting a straigh
 #### Task 5 – Braking Distance
 
 The braking distance of the car was also measured. Braking distance of the car is an important aspect to understand as it indicates how much space the car will need to come to a stop when it senses an object. If the car tends to hit the obstacles often, it may damage the robot and the on-board electronics. 
-The braking distance of the car was tested by running it at full velocity, and then abruptly pressing the back button to provide “brakes.” The distance it took to brake was measured and noted down, as seen in the images below. This was done several times to achieve data average (mean). 
+The braking distance of the car was tested by running it at full velocity, and then abruptly pressing the back button to provide “brakes.” The distance it took to brake was measured and noted down, as seen in the images below. This was done several times to achieve data average (mean). The average braking distance of the car was roughly 11 inches (0.2794 meters), when the car is running at full speed for a total travel of 6.096 meters (20 ft).
 
 <img src="../images/Lab4/brake_1.jpg" width="300" height="300" alt="image1" class="inline"/>
 

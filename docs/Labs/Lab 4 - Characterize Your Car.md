@@ -26,10 +26,10 @@ The objective of this lab is to familiarize ourselves with the capabilities of t
 
 #### Task 1 – Car Dimensions
 Below are the dimensions of the car:
-*Car Length (with wheels) – 182 mm
-*Car Width (with wheels) – 149 mm
-*Car Height (with wheels) – 75 mm
-*Wheel Diameter – 75 mm
+* Car Length (with wheels) – 182 mm
+* Car Width (with wheels) – 149 mm
+* Car Height (with wheels) – 75 mm
+* Wheel Diameter – 75 mm
 The dimensions of the car are important to note as they will influence the distance/depth measurements. The offset from the sensor to the front of the car will be helpful when measuring the distance to an object. 
 
 ---

@@ -55,9 +55,9 @@ It was noticed that the car tends to drift to the left when attempting a straigh
 
 <img src="../images/Lab4/speed.jpg" width="300" height="300" alt="image1" class="inline"/>
 
-<img src="../images/Lab4/speed_graph.jpg" width="300" height="300" alt="image1" class="inline"/>
+<img src="../images/Lab4/speed_graph.JPG" width="300" height="300" alt="image1" class="inline"/>
 
-<img src="../images/Lab4/speed_graph_2.jpg" width="300" height="300" alt="image1" class="inline"/>
+<img src="../images/Lab4/speed_graph_2.JPG" width="300" height="300" alt="image1" class="inline"/>
 
 
 ---

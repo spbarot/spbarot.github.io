@@ -19,17 +19,19 @@ The objective of this lab is to familiarize ourselves with the capabilities of t
 3. Car and Remote Controller
 4. Stopwatch
 5. Tape
+
 ---
+
 ## III. Procedure/Design/Results
 
 #### Task 1 – Car Dimensions
 Below are the dimensions of the car:
-•	Car Length (with wheels) – 182 mm
-•	Car Width (with wheels) – 149 mm
-•	Car Height (with wheels) – 75 mm
-•	Wheel Diameter – 75 mm
-
+*Car Length (with wheels) – 182 mm
+*Car Width (with wheels) – 149 mm
+*Car Height (with wheels) – 75 mm
+*Wheel Diameter – 75 mm
 The dimensions of the car are important to note as they will influence the distance/depth measurements. The offset from the sensor to the front of the car will be helpful when measuring the distance to an object. 
+
 ---
 
 #### Task 2 – Car Weight
@@ -48,8 +50,8 @@ The battery life (850 mAh) of the vehicle was tested by constantly straining the
 
 It is important to note the velocity of the robot for several reasons. First, the velocity of the robot can help dictate how fast we need to sample the distance measurement (ToF sensor) in order to effectively sense objects in the robot’s path. For example, if the robot has too much velocity, it may not be able to sense the distance fast enough for object avoidance. 
 The speed of the robot was tested by checking how much time the car took to cover certain distances, with the help of a stopwatch. As seen in the image below, tape is placed on the floor to mark out 5 feet segments, totaling 20 feet. The velocity of the car is computed in the graph below based on how much time the car took to reach the four checkpoints (5, 10, 15, 20 ft).  This was done several times to achieve data average (mean). 
-
 It was noticed that the car tends to drift to the left when attempting a straight pathway often. This may be so due to the left the motor spinning faster or faster then the right one, causing the car to steer leftwards. This information will be helpful in the future labs as we will be able to adjust for the lack of calibration in the two motors. 
+
 ---
 
 #### Task 5 – Braking Distance
@@ -65,8 +67,6 @@ The robot is also capable of doing stunts. As seen in the video below, a 180-deg
 
 
 ---
-
-
 
 ## IV. Conclusion
 

@@ -77,7 +77,7 @@ The car is then placed on one side and the program shown in Task 2 is flashed on
 
 The power supply input to the motor driver is disconnected. A 850mAh battery is used instead of the power supply. The function of one motor driver is again tested and verified with the new battery connection. 
 
-<img src="../images/Lab5/battery.jpg" width="200" height="400" alt="image1" class="inline"/>
+<img src="../images/Lab5/battery.jpg" width="250" height="400" alt="image1" class="inline"/>
 
 ---
 
@@ -97,7 +97,7 @@ Tasks  3 – 5 are followed for the second motor driver. The following code is u
 
 Finally, all the electronic components are securely installed on the robot using two-sided tape, electrical tape, and duct tape. One TOF sensor is placed on the front of the car while the other is placed on the left side of the chassis, between two wheels. The IMU is placed on top of the chassis. The Artemis and the associated 650mAh battery are placed inside the compartment where the removed PCB was placed. The two motor drivers are located on the other side of the 850mAh battery compartment. 
 
-<img src="../images/Lab5/car.jpg" width="200" height="400" alt="image1" class="inline"/>
+<img src="../images/Lab5/car.jpg" width="250" height="400" alt="image1" class="inline"/>
 
 ---
 

@@ -46,7 +46,7 @@ The oscilloscope reading represented a square wave with a duty cycle of 50%. The
 ```
 // left motor
 // output of 127 implies a 50% duty cycle
-  analogWrite(A0, 127);       // forward motion
+  analogWrite(A0, 127);     // forward motion
   analogWrite(A1, 0);         // backward motion
 ```
 
@@ -61,7 +61,7 @@ The car is taken apart to remove the off-the-shelf electronics components to be 
 ```
 // left motor
 // output of 127 implies a 50% duty cycle
-  analogWrite(A0, 0);       // forward motion
+  analogWrite(A0, 0);             // forward motion
   analogWrite(A1, 127);         // backward motion
 ```
 
@@ -142,7 +142,7 @@ The robot is programmed to demonstrate open lop control by cycling through the f
   analogWrite(A0, 65);     // left motor, forward motion
   analogWrite(A14, 60);    // right motor, forward motion
   
-  delay(1000);             // move forward for 3 seconds
+  delay(1000);    // move forward for 3 seconds
 
   // stop
   analogWrite(A0, 0);       
@@ -218,6 +218,8 @@ As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board
 
 
 ## IV. Conclusion
+
+The objective of this lab, to demonstrate an open loop control scheme was successfully satisfied. The knowledge gained from this lab in regards to programming the Artemis and interfacing with the dual motor drivers will be very useful in future labs. One issue encountered during the lab was the short battery life of the 850mAh battery (~ 9 minutes). In the future, it will be helpful to keep more batteries in the kit. Overall, the lab was quite smooth and the lab guideline seemed to very helpful. 
 
 ---
 

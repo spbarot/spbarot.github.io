@@ -212,7 +212,7 @@ As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board
 
 #### Task 12 – Additional Task: Ramp up and down
 
-
+The program below ramps up and down in speed gradually. The distance values from the front TOF sensor are reported over Bluetooth to the computer. The distance information, with the help of the timing data, can help extrapolate the speed values of the robot.
 
 ---
 

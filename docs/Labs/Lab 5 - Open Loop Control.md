@@ -8,7 +8,7 @@ title: Lab 5 – Open Loop Control
 
 ## I. Objective
 
-The primary objective of this lab is to change the controls of the robot from a manual scheme to an open loop scheme. The off-the-shelf robot’s electronics shall be gutted and replaced by the laboratory equipment. The secondary goal of the lab is to interface the two dual motor drivers and integrate them with the Artemis. All electronics shall be securely mounted to the robot chassis upon the completion of this lab. The robot should be able to execute a programmed series of movies with the help of the two dual motor drivers. 
+The primary objective of this lab is to change the controls of the robot from a manual scheme to an open loop scheme [1]. The off-the-shelf robot’s electronics shall be gutted and replaced by the laboratory equipment. The secondary goal of the lab is to interface the two dual motor drivers and integrate them with the Artemis. All electronics shall be securely mounted to the robot chassis upon the completion of this lab. The robot should be able to execute a programmed series of movies with the help of the two dual motor drivers. 
 
 ---
 
@@ -27,9 +27,7 @@ The primary objective of this lab is to change the controls of the robot from a 
 
 The diagram below represents the circuit interconnections with respect to the two dual motor drivers and the Artemis board. Any analog to digital pin on the Artemis can be utilized as inputs to the motor drivers. Artemis pins A0 and A1 are used to control the first motor driver and pins A14 and A15 are used to control the second motor driver. 
 
-Image – circuit diagram
-
-Image – car Chassis
+<img src="../images/Lab5/circuit.JPG" width="500" height="250" alt="image1" class="inline"/>
 
 ---
 
@@ -52,7 +50,7 @@ The oscilloscope reading represented a square wave with a duty cycle of 50%. The
   analogWrite(A1, 0);         // backward motion
 ```
 
-Image – oscilloscope reading
+<img src="../images/Lab5/osci.jpg" width="300" height="70" alt="image1" class="inline"/>
 
 ---
 
@@ -79,7 +77,7 @@ The car is then placed on one side and the program shown in Task 2 is flashed on
 
 The power supply input to the motor driver is disconnected. A 850mAh battery is used instead of the power supply. The function of one motor driver is again tested and verified with the new battery connection. 
 
-Image – battery connection
+<img src="../images/Lab5/battery.jpg" width="200" height="400" alt="image1" class="inline"/>
 
 ---
 
@@ -99,16 +97,15 @@ Tasks  3 – 5 are followed for the second motor driver. The following code is u
 
 Finally, all the electronic components are securely installed on the robot using two-sided tape, electrical tape, and duct tape. One TOF sensor is placed on the front of the car while the other is placed on the left side of the chassis, between two wheels. The IMU is placed on top of the chassis. The Artemis and the associated 650mAh battery are placed inside the compartment where the removed PCB was placed. The two motor drivers are located on the other side of the 850mAh battery compartment. 
 
-Image – car chassis
+<img src="../images/Lab5/car.jpg" width="200" height="400" alt="image1" class="inline"/>
 
 ---
-
 
 #### Task 8 – Explore Lower Limit
 
 To test the lower limit of the motor at which the robot can move, a trial and error method was used. First, the analog output of 30 (12% duty cycle) was tried which made the wheels turn, however, could not move the robot once placed on the ground. Then the analog output was gradually tested and increased until the robot was able to move. The lower limit of the motor at which the robot moves occurs at the PWM output of 42. This roughly results in a duty cycle of approximately 17%. 
 
-video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ur40XzfMPZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -118,13 +115,15 @@ While running the robot on the ground, it is evident that the motors do not spin
 
 Using a trial and error method, it is noticed that the left motor functions at about 92% of the rate when compared to the right motor. Therefore, the left motor’s analog value must be multiplied by (1/0.92) 1.08 to match the output of the right motor. Testing at an output of 60 (24% duty cycle) for the right motor, the left motor’s analog value (60) is multiplied by 1.08 to achieve the analog value of 65. This ensures that the true motor outputs match, resulting in a straight line path for the robot. 
 
-video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6dM7TGw9aJM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R1XxlmfvRHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
 #### Task 10 – Additional Task: AnalogWrite Frequency
 
-As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board is 490 Hz []. The motor driver’s internal PWM frequency is 50 kHz, as seen on the motor driver cut sheet [].  Manually configuring the timers to generate a faster PWM output will cause the motors to spin faster, increasing the speed of the robot. Increasing the PWM output will also provide greater control over the movements of the robot, and we will be able to send more signals in a time segment.
+As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board is 490 Hz [3]. The motor driver’s internal PWM frequency is 50 kHz, as seen on the motor driver cut sheet [2].  Manually configuring the timers to generate a faster PWM output will cause the motors to spin faster, increasing the speed of the robot. Increasing the PWM output will also provide greater control over the movements of the robot, and we will be able to send more signals in a time segment.
  
 ---
 
@@ -142,8 +141,8 @@ As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board
 ## V. References
 
 1. [ECE 5960 – Lab 5 Guideline](https://cei-lab.github.io/ECE4960-2022/Lab5.html)
-2. Motor Driver Data sheet - https://www.ti.com/lit/ds/symlink/drv8833.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1646842101533&ref_url=https%253A%252F%252Fcei-lab.github.io%252F
-3. analogWrite - 
+2. [Motor Driver Data sheet](https://www.ti.com/lit/ds/symlink/drv8833.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1646842101533&ref_url=https%253A%252F%252Fcei-lab.github.io%252F)
+3. [Arduino analogWrite Command](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
 
 ---
 

@@ -101,6 +101,7 @@ Finally, all the electronic components are securely installed on the robot using
 
 ---
 
+
 #### Task 8 – Explore Lower Limit
 
 To test the lower limit of the motor at which the robot can move, a trial and error method was used. First, the analog output of 30 (12% duty cycle) was tried which made the wheels turn, however, could not move the robot once placed on the ground. Then the analog output was gradually tested and increased until the robot was able to move. The lower limit of the motor at which the robot moves occurs at the PWM output of 42. This roughly results in a duty cycle of approximately 17%. 
@@ -115,9 +116,11 @@ While running the robot on the ground, it is evident that the motors do not spin
 
 Using a trial and error method, it is noticed that the left motor functions at about 92% of the rate when compared to the right motor. Therefore, the left motor’s analog value must be multiplied by (1/0.92) 1.08 to match the output of the right motor. Testing at an output of 60 (24% duty cycle) for the right motor, the left motor’s analog value (60) is multiplied by 1.08 to achieve the analog value of 65. This ensures that the true motor outputs match, resulting in a straight line path for the robot. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6dM7TGw9aJM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/6dM7TGw9aJM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R1XxlmfvRHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/R1XxlmfvRHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

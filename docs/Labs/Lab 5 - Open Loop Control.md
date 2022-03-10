@@ -41,7 +41,7 @@ The necessary power and signal outputs are connected to the motor driver. The mo
 
 The following commands were added to the example analogWrite program to generate an output. The analog value of 127 is written to pin A0 while the value of 0 is written to pin A1. This signals the motor to provide a “forward motion” output. 
 
-The oscilloscope reading represented a square wave with a duty cycle of 50%. The negative edge of the wave decays slightly instead of instantaneously falling to 0. This may be a result of the influence of the several electronic components on the Artemis and the motor driver.  
+The oscilloscope reading represented a square wave with a duty cycle of 50%. The negative edge of the wave decays slightly instead of instantaneously falling to 0. This may be a result of the influence of the several electronic components on the Artemis and the motor driver.  The oscilloscope image below is an accurate replica of what the true oscilloscope reading represented in the lab. 
 
 ```
 // left motor
@@ -124,13 +124,93 @@ Using a trial and error method, it is noticed that the left motor functions at a
 
 ---
 
-#### Task 10 – Additional Task: AnalogWrite Frequency
+#### Task 10 – Open Loop Control
+
+The robot is programmed to demonstrate open lop control by cycling through the following movement loop: 
+*  Go forward for 1 second
+* Stop
+* Turn right for 1 second
+* Stop
+* Go forward for 1 second
+* Stop
+* Turn right for 1 second
+* Stop
+* Go forward for 1 second
+
+``` 
+  // forward
+  analogWrite(A0, 65);     // left motor, forward motion
+  analogWrite(A14, 60);    // right motor, forward motion
+  
+  delay(1000);             // move forward for 3 seconds
+
+  // stop
+  analogWrite(A0, 0);       
+  analogWrite(A14, 0);
+
+  delay(2000);   
+
+  // turn right 
+  analogWrite(A0, 150);       
+  analogWrite(A14, 30);
+
+  delay (1000);              
+
+  // stop
+  analogWrite(A0, 0);       
+  analogWrite(A14, 0);
+
+  delay(2000);   
+
+  // forward
+  analogWrite(A0, 65);    
+  analogWrite(A14, 60);    
+  
+  delay(1000);               
+
+  // stop
+  analogWrite(A0, 0);       
+  analogWrite(A14, 0);
+
+  delay(2000);   
+
+  //turn right 
+  
+  analogWrite(A0, 150);       
+  analogWrite(A14, 30);
+
+  delay (1000);             
+
+  // stop
+  analogWrite(A0, 0);       
+  analogWrite(A14, 0);
+
+  delay(2000);   
+
+  // forward
+  analogWrite(A0, 65);     
+  analogWrite(A14, 60);    
+  
+  delay(1000);
+```
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/erF1TMNzm_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+---
+
+
+
+
+#### Task 11 – Additional Task: AnalogWrite Frequency
 
 As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board is 490 Hz [3]. The motor driver’s internal PWM frequency is 50 kHz, as seen on the motor driver cut sheet [2].  Manually configuring the timers to generate a faster PWM output will cause the motors to spin faster, increasing the speed of the robot. Increasing the PWM output will also provide greater control over the movements of the robot, and we will be able to send more signals in a time segment.
  
 ---
 
-#### Task 11 – Additional Task: Ramp up and down
+#### Task 12 – Additional Task: Ramp up and down
 
 
 

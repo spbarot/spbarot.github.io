@@ -82,8 +82,18 @@ return (P*current_error) + (I*I_sum) + ((D*(current_error - error_previous))/(ti
 #### Task A – Don’t Hit the Wall! 
 
 Task A involves driving as fast as possible towards a wall, then stopping at exactly 300mm away with the help of ToF sensor readings and the PID controller. Several considerations are explored to come up with a control scheme. 
+The following videos represent different test runs with different PID parameter settings. The first video has a KP value of 0.1 and a KD value of 0.2. The second video has a KP value of 0.2 and a KD value of 5.0. The third video has a KP value of 0.15 and a KD value of 3.0. The third video represents the most effective implementation of the controller. 
+VIDEO 1
 
-Speed = 0.8 m/s
+VIDEO 2
+
+VIDEO 3
+
+<img src="../images/Lab6/dist_time.JPG" width="500" alt="image1" class="inline"/>
+
+<img src="../images/Lab6/motor_time.JPG" width="500" alt="image1" class="inline"/>
+
+The fasted speed achieved during the demos was approximately 0.75 meters/second. It is believed that the speed can be a lot faster however, the program is running with low to medium PWM values and the space in my apartment is slightly limited. 
 
 ---
 

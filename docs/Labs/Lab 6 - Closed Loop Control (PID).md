@@ -69,9 +69,23 @@ ble.send_command(CMD.SEND_DATA, "")
 ```
 ---
 
+#### PID/PD Controller 
+
+A PID controller is a very well-known closed loop control system used for numerous applications. The control scheme operates by providing the required output to a meet a specified setpoint. Sensors are often used to determine the error in the controller so that the feedback can be adjusted accordingly to meet the setpoint. For this lab, a PD controller is utilized which outputs the PWM duty cycle that is used to drive the motors.  Upon trial and error, it was noticed that the controller is the most effective when the KP value is 0.15, and the KD value is 3.0. The KD value is extremely high as it was not deemed effective for lower values. The integrator was not used as it delivered an overshoot. The following code is used to compute the PID output. 
+```
+float PID_pass(float time_current, float time_previous, float error_previous, float current_error, float I_sum) 
+{
+return (P*current_error) + (I*I_sum) + ((D*(current_error - error_previous))/(time_current -   time_previous));
+}
+```
+
+
+
 #### Task A – Don’t Hit the Wall! 
 
-xxx
+Task A involves driving as fast as possible towards a wall, then stopping at exactly 300mm away with the help of ToF sensor readings and the PID controller. Several considerations are explored to come up with a control scheme. 
+
+Speed = 0.8 m/s
 
 ---
 
@@ -84,8 +98,6 @@ The objective of this lab, to demonstrate an open loop control scheme was succes
 ## V. References
 
 1. [ECE 5960 – Lab 6 Guideline](https://cei-lab.github.io/ECE4960-2022/Lab6.html)
-2. [Motor Driver Data sheet](https://www.ti.com/lit/ds/symlink/drv8833.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1646842101533&ref_url=https%253A%252F%252Fcei-lab.github.io%252F)
-3. [Arduino analogWrite Command](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
 
 ---
 

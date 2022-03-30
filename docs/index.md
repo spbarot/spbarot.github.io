@@ -18,4 +18,4 @@ ECE 5960 - Design and Implementation of Fast Robots focuses on systems level des
 [Lab 3 - Sensors](./Labs/Lab 3 - Sensors.md) <br/>
 [Lab 4 - Characterize Your Car](./Labs/Lab 4 - Characterize Your Car.md) <br/>
 [Lab 5 - Open Loop Control](./Labs/Lab 5 - Open Loop Control.md) <br/>
-[Lab 6 - Closed Loop Control (PID)](./Labs/Lab 6 - closed Loop Control (PID).md) <br/>
+[Lab 6 - Closed Loop Control (PID)](./Labs/Lab 6 - Closed Loop Control (PID).md) <br/>

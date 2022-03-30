@@ -79,6 +79,9 @@ return (P*current_error) + (I*I_sum) + ((D*(current_error - error_previous))/(ti
 }
 ```
 
+---
+
+
 #### Task A – Don’t Hit the Wall! 
 
 Task A involves driving as fast as possible towards a wall, then stopping at exactly 300mm away with the help of ToF sensor readings and the PID controller. Several considerations are explored to come up with a control scheme. 
@@ -91,12 +94,31 @@ The following videos represent different test runs with different PID parameter 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8CnVVk1bOHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
+Below are the Distance VS Time and Motor Input VS Time graphs for Test Run 3 (video 3). 
 <img src="../images/Lab6/dist_time.JPG" width="500" alt="image1" class="inline"/>
 
 <img src="../images/Lab6/motor_time.JPG" width="500" alt="image1" class="inline"/>
 
-The fasted speed achieved during the demos was approximately 0.75 meters/second. It is believed that the speed can be a lot faster however, the program is running with low to medium PWM values and the space in my apartment is slightly limited. 
+The fastest speed achieved during the demos was approximately 0.75 meters/second. It is believed that the speed can be a lot faster however, the program is running with low to medium PWM values and the space in my apartment is slightly limited. 
+
+---
+
+
+#### Proportional Controller Range Reasonable Range
+
+---
+
+
+#### ToF Range and Sample Time
+
+---
+
+
+#### Derivative Controller Kick
+
+---
+
+#### Integrator Wind Up
 
 ---
 

@@ -51,6 +51,7 @@ for (int i = 0; i < counter; i++){
       tx_estring_value.append(pwm_array[i]);
       tx_characteristic_string.writeValue(tx_estring_value.c_str());
    }
+```
 
 For the above code to work, several issues may need to be debugged. For example, buffer overflow is an issue that came up which was solved by limiting the size of the arrays or stopping the program after a certain number of seconds. Another issue that came up was a “hard-fault” error which was caused by storing a float value into a static long value. This was resolved by matching the formats of both values (float values). 
 
@@ -64,6 +65,7 @@ def notification_handler(uuid, value):
 ble.start_notify(ble.uuid['RX_STRING'], notification_handler)
 ble.send_command(CMD.START_REC, "")
 ble.send_command(CMD.SEND_DATA, "")
+
 ```
 ---
 
@@ -88,7 +90,6 @@ The objective of this lab, to demonstrate an open loop control scheme was succes
 ---
 
 [Return to Main Page](https://spbarot.github.io/)
-
 
 
 

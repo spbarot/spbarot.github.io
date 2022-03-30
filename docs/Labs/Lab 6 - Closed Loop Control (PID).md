@@ -79,8 +79,6 @@ return (P*current_error) + (I*I_sum) + ((D*(current_error - error_previous))/(ti
 }
 ```
 
-
-
 #### Task A – Don’t Hit the Wall! 
 
 Task A involves driving as fast as possible towards a wall, then stopping at exactly 300mm away with the help of ToF sensor readings and the PID controller. Several considerations are explored to come up with a control scheme. 
@@ -91,7 +89,7 @@ Speed = 0.8 m/s
 
 ## IV. Conclusion
 
-The objective of this lab, to demonstrate an open loop control scheme was successfully satisfied. The knowledge gained from this lab in regards to programming the Artemis and interfacing with the dual motor drivers will be very useful in future labs. One issue encountered during the lab was the short battery life of the 850mAh battery (~ 9 minutes). In the future, it will be helpful to keep more batteries in the kit. Overall, the lab was quite smooth and the lab guideline seemed to very helpful. 
+The objective of this lab, to demonstrate a closed loop control scheme was successfully satisfied. This lab was extremely challenging yet very rewarding. There were several issues faced during the lab such as hardware faults, software bugs (BLE and hardfaults). Overcoming these challenges was very satisfying and the knowledge gained from this lab in regard to programming the Artemis, interfacing with the motor drivers and sensors, and implementing PID control will be very useful in the future labs. The staff was also extremely helpful during the lab. 
 
 ---
 

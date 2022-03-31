@@ -122,7 +122,7 @@ The derivative-aspect of the utilized PD controller results in a “derivative k
 
 #### Integral Wind Up
 
-Integral wind up is a phenomenon when a large change in setpoint causes the integral term to accumulate a large error during the rise. This causes the controller to overshoot and oscillate until the error is unwound. While an integral controller is not used, a plausible solution is to zero out the integral value every time the error crosses zero. 
+Integral wind up is a phenomenon where a large change in setpoint causes the integral term to accumulate a large error during the rise. This causes the controller to overshoot and oscillate until the error is unwound. While an integral controller is not used, a plausible solution is to zero out the integral value every time the error crosses zero. 
 
 ---
 

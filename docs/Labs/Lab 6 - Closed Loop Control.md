@@ -32,7 +32,7 @@ The primary objective of this lab is to implement a Closed-Loop Control (PID) sy
 The following tasks shall be accomplished as a part of this lab: 
 * Implement a PID/PD controller 
 * Setup the BLE framework to send data
-* Setup the Jupyter () framework to receive data 
+* Setup the Jupyter framework to receive data 
 * Integrate PID program with BLE program
 * Process, condition, and plot the data in Jupyter
 
@@ -128,7 +128,7 @@ Integral wind up is a phenomenon where a large change in setpoint causes the int
 
 ## IV. Conclusion
 
-The objective of this lab, to demonstrate a closed loop control scheme was successfully satisfied. This lab was extremely challenging yet very rewarding. There were several issues faced during the lab such as hardware faults, software bugs (BLE and hardfaults). Overcoming these challenges was very satisfying and the knowledge gained from this lab in regard to programming the Artemis, interfacing with the motor drivers and sensors, and implementing PID control will be very useful in the future labs. The staff was also extremely helpful during the lab. 
+The objective of this lab, to demonstrate a closed loop control scheme was successfully satisfied. This lab was extremely challenging yet very rewarding. There were several issues faced during the lab such as hardware faults, software bugs (BLE). Overcoming these challenges was very satisfying and helpful as the experimenter understood the causes of these issues. The knowledge gained from this lab in regards to programming the Artemis (C++), interfacing with the motor drivers and sensors, implementing PID control, and jupyter (python) will be very useful in the future labs. The staff was also extremely helpful during the lab. 
 
 ---
 

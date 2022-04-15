@@ -117,15 +117,18 @@ plt.show()
 
 ## IV. Conclusion
 
-The objective of this lab, to build a virtual map of the static room is successfully satisfied. There were several issues faced during the lab such as robot issues (jerky turning, friction), software and bluetooth related issues. Too much time was spent on the PID and reading the distances, which did not leave enough time to complete the remainder of the tasks. However, this lab was very helpful in understanding the mapping process in robotics. Knowledge gained from this lab with respect to mapping will assist in the future labs. staff was very helpful during the lab and provided important assistance to debug issues.
+The objective of this lab, to build a virtual map of the static room is successfully satisfied. There were several issues faced during the lab such as robot issues (jerky turning, friction), software and bluetooth related issues. Too much time was spent on the PID and reading the distances, which did not leave enough time to complete the remainder of the tasks. However, this lab was very helpful in understanding the mapping process in robotics. Knowledge gained from this lab with respect to mapping will assist in the future labs. staff was very helpful during the lab and provided important assistance to debug issues. 
 
 ---
 
 ## V. References
 
 1. [ECE 5960 – Lab 9 Guideline](https://cei-lab.github.io/ECE4960-2022/Lab9.html)
+2. [Lab 6 Report](https://spbarot.github.io/Labs/Lab%206%20-%20Closed%20Loop%20Control.html)
 
-
+#### Collaborators
+Patel, Priyam
+Pillai, Nikhil
 
 ---
 

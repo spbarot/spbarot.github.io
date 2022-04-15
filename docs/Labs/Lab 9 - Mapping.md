@@ -44,8 +44,7 @@ setSpeed(PID_pass(time_current, time_previous, error_previous, (rotational_speed
 float PID_pass(float time_current, float time_previous, float error_previous, float current_error, float I_sum) 
 {
  return (P*current_error) + (I*I_sum) + ((D*(current_error - error_previous))/(time_current - time_previous));
-}
-```
+}```
 
 One of the methods used to perform smooth rotations was adding tape to the wheels. This decreased the friction and the jerking of the robot, in turn improving the quality of the sensor readings. However, the robot did turn a lot faster at first when the tape was put on, so the maximum PWM of the robot had to be decreased by about 30%. 
 
@@ -74,8 +73,8 @@ Once the PID control is verified, the robot is ready to read out the distances. 
 
 <img src="../images/Lab 9/polar_plots.png" width="500" alt="image1" class="inline"/>
 <img src="../images/Lab 9/certesian_plots.png" width="500" alt="image1" class="inline"/>
-<img src="../images/Lab 9/merge.png" width="500" alt="image1" class="inline"/>
-<img src="../images/Lab 9/line.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab 9/merge.JPG" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab 9/line.JPG" width="500" alt="image1" class="inline"/>
 
 
 ---
@@ -104,10 +103,9 @@ plt.plot(x_small_box_dim, y_small_box_dim)
 plt.show()
 ```
 
-<img src="../images/Lab 9/line_original.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab 9/line_original.JPG" width="500" alt="image1" class="inline"/>
 
-
-<img src="../images/Lab 9/line.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab 9/line.JPG" width="500" alt="image1" class="inline"/>
 
  
 

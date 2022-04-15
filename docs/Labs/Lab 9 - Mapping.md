@@ -72,7 +72,7 @@ Once the PID control is verified, the robot is ready to read out the distances. 
 #### Merge and Plot Readings
 
 <img src="../images/Lab 9/polar_plots.png" width="500" alt="image1" class="inline"/>
-<img src="../images/Lab 9/certesian_plots.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab 9/cartesian_plots.png" width="500" alt="image1" class="inline"/>
 <img src="../images/Lab 9/merge.JPG" width="500" alt="image1" class="inline"/>
 <img src="../images/Lab 9/line.JPG" width="500" alt="image1" class="inline"/>
 

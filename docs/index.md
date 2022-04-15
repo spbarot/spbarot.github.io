@@ -21,4 +21,4 @@ ECE 5960 - Design and Implementation of Fast Robots focuses on systems level des
 [Lab 6 - Closed Loop Control](./Labs/Lab 6 - Closed Loop Control.md) <br/>
 [Lab 7 - Kalman Filters (Coming Soon)](./Labs/Lab 7 - Kalman Filters.md) <br/>
 [Lab 8 - Stunts (Coming Soon)](./Labs/Lab 8 - Stunts.md) <br/>
-[Lab 9 - Mapping](./Labs/Lab 8 - Stunts.md) <br/>
+[Lab 9 - Mapping](./Labs/Lab 9 - Mapping.md) <br/>

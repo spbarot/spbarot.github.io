@@ -128,6 +128,7 @@ The objective of this lab, to build a virtual map of the static room is successf
 
 #### Collaborators
 Patel, Priyam
+<br>
 Pillai, Nikhil
 
 ---

@@ -44,8 +44,8 @@ setSpeed(PID_pass(time_current, time_previous, error_previous, (rotational_speed
 float PID_pass(float time_current, float time_previous, float error_previous, float current_error, float I_sum) 
 {
  return (P*current_error) + (I*I_sum) + ((D*(current_error - error_previous))/(time_current - time_previous));
-}```
-
+}
+```
 One of the methods used to perform smooth rotations was adding tape to the wheels. This decreased the friction and the jerking of the robot, in turn improving the quality of the sensor readings. However, the robot did turn a lot faster at first when the tape was put on, so the maximum PWM of the robot had to be decreased by about 30%. 
 
 Because a derivative controller was utilized, derivate error is present in the calculations. If there was more time to complete and optimize this lab, a low pass filter would have been utilized to for noise reduction and for smoothing out the control signal. 

@@ -40,9 +40,10 @@ Continuing from Lab 6, a PD controller is utilized which outputs the PWM duty cy
 
 ```
 setSpeed(PID_pass(time_current, time_previous, error_previous, (rotational_speed - setPoint), I_sum));
+
 float PID_pass(float time_current, float time_previous, float error_previous, float current_error, float I_sum) 
 {
-return (P*current_error) + (I*I_sum) + ((D*(current_error - error_previous))/(time_current - time_previous));
+ return (P*current_error) + (I*I_sum) + ((D*(current_error - error_previous))/(time_current - time_previous));
 }
 ```
 
@@ -89,12 +90,14 @@ x_bigbox_dim = np.array([2.5,4.5,4.5,2.5,2.5])
 y_bigbox_dim = np.array([-0.5,-0.5,1.5,1.5,-0.5])
 x_small_box_dim = np.array([-0.5,0.5,0.5,-0.5,-0.5])
 y_small_box_dim = np.array([-4.5,-4.5,-3.5,-3.5,-4.5])
+
 x_dim = x_dim * 304.8
 y_dim = y_dim * 304.8
 x_bigbox_dim = x_bigbox_dim * 304.8
 y_bigbox_dim = y_bigbox_dim * 304.8
 x_small_box_dim = x_small_box_dim * 304.8
 y_small_box_dim = y_small_box_dim * 304.8
+
 plt.plot(x_dim, y_dim)
 plt.plot(x_bigbox_dim, y_bigbox_dim)
 plt.plot(x_small_box_dim, y_small_box_dim)

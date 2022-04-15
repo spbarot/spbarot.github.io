@@ -127,8 +127,6 @@ The objective of this lab, to build a virtual map of the static room is successf
 2. [Lab 6 Report](https://spbarot.github.io/Labs/Lab%206%20-%20Closed%20Loop%20Control.html)
 
 #### Collaborators
-Patel, Priyam
-<br>
 Pillai, Nikhil
 
 ---

@@ -71,16 +71,22 @@ Once the PID control is verified, the robot is ready to read out the distances. 
 
 #### Merge and Plot Readings
 
+Four polar plots are formed for each marked location in the room. While some information can be retrieved from the polar plots, it is much easier to visualize the map from the cartesian plots. 
 <img src="../images/Lab 9/polar_plots.png" width="500" alt="image1" class="inline"/>
+
+To form the cartesian plots, the rectangular X and Y coordinates were produced by multiplying the distance with cos(theta) and sin(theta). The four individual maps below provide pieces of information that form the entire map of the room. 
 <img src="../images/Lab 9/cartesian_plots.png" width="500" alt="image1" class="inline"/>
+
+The four separate plots are then merged together to create a final map that resembles the actual room. 
 <img src="../images/Lab 9/merge.JPG" width="500" alt="image1" class="inline"/>
-<img src="../images/Lab 9/line.JPG" width="500" alt="image1" class="inline"/>
 
 
 ---
 
 
 #### Convert to Line-Based Map
+
+The merged scatter plot displays the outline of the room, but cannot be used in the simulator. To create a line-based map that can be used in the simulator, the dimensions of the room are plotted and overlayed with the merged plot. 
 
 ```
 x_dim = np.array([-5.5,6.5,6.5,-2.5,-2.5,-5.5, -5.5])
@@ -107,13 +113,11 @@ plt.show()
 
 <img src="../images/Lab 9/line.JPG" width="500" alt="image1" class="inline"/>
 
- 
-
 ---
 
 ## IV. Conclusion
 
-The objective of this lab, to build a virtual map of the static room is successfully satisfied. There were several issues faced during the lab such as robot issues (turning, friction), software and Bluetooth related issues (-5.-5). Knowledge gained from this lab with respect to mapping will assist the The staff was very helpful during the lab and provided important assistance to debug issues.
+The objective of this lab, to build a virtual map of the static room is successfully satisfied. There were several issues faced during the lab such as robot issues (jerky turning, friction), software and bluetooth related issues. Too much time was spent on the PID and reading the distances, which did not leave enough time to complete the remainder of the tasks. However, this lab was very helpful in understanding the mapping process in robotics. Knowledge gained from this lab with respect to mapping will assist in the future labs. staff was very helpful during the lab and provided important assistance to debug issues.
 
 ---
 

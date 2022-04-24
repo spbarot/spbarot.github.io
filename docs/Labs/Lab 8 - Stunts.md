@@ -120,7 +120,7 @@ The motivation for the open loop stunt comes from Hot Wheels cars and track sets
 
 #### Bloopers 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-GQfIVtlC3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

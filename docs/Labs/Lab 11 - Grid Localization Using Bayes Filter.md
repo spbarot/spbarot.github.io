@@ -14,9 +14,8 @@ The primary objective of this lab is to implement simulation based grid localiza
 
 ## II. Materials/Software
 
-1. 1x Fully assembled robot with Artemis, ToF sensors, and an IMU sensor
-2. 1x USB A to C Cable
-3. 2x Li-ion 3.7V 650mAh (or more) Battery
+1. Jupyter Lab - Lab 11 Notebook
+
 
 ---
 

@@ -22,3 +22,5 @@ ECE 5960 - Design and Implementation of Fast Robots focuses on systems level des
 [Lab 7 - Kalman Filters](./Labs/Lab 7 - Kalman Filters.md) <br/>
 [Lab 8 - Stunts](./Labs/Lab 8 - Stunts.md) <br/>
 [Lab 9 - Mapping](./Labs/Lab 9 - Mapping.md) <br/>
+[Lab 10 - Simulator](./Labs/Lab 10 - Simulator.md) <br/>
+[Lab 11 - Grid Localization Using Bayes Filter](./Labs/Lab 11 - Grid Localization Using Bayes Filter) <br/>

@@ -25,6 +25,9 @@ The primary objective of this lab is to implement simulation based grid localiza
 ---
 
 #### Bayes Filter Overview
+Bayes filter is a general algorithm utilized for estimating the state of dynamic systems (robots) and to compute belief from observations and control data. For this lab, the Bayes filter is specifically used to obtain a belief of the robot’s previous and current state (grid tile position) based on the information received from the sensor and control inputs. To compute belief, the alrogrithm requires an intialy belief at t=0. In our case, the initial probability at the grid cell index (10,10,9) is 1.0 and every other cell has a value of 0. 
+
+<img src="../images/Lab11/bayes.JPG" width="200" alt="image1" class="inline"/>
 
 ---
 

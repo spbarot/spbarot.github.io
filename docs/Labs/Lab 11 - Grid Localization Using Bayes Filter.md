@@ -44,7 +44,7 @@ The continuous real space is discretized into a finite 3D grid space consisting 
 
 The compute control function contains the logic to determine the delta_rot1, delta_rot2, and delta_translation. This function calculates the control sequence of the robot between two given positions. 
 
-<img src="../images/Lab11/compute.JPG" width="150" alt="image1" class="inline"/>
+<img src="../images/Lab11/compute.JPG" width="200" alt="image1" class="inline"/>
 
 ```
 def compute_control(cur_pose, prev_pose):
@@ -64,7 +64,7 @@ def compute_control(cur_pose, prev_pose):
 #### Odometry Motion Model
 The odometry motion model function retains the control information from the compute_control function and calculates the transition probability/action model for the prediction step. A Gaussian model is used to model is used to characterize the probability curve. 
 
-<img src="../images/Lab11/odometry.JPG" width="150" alt="image1" class="inline"/>
+<img src="../images/Lab11/odometry.JPG" width="200" alt="image1" class="inline"/>
 
 ```
 def odom_motion_model(cur_pose, prev_pose, u):
@@ -90,7 +90,7 @@ def odom_motion_model(cur_pose, prev_pose, u):
 
 The prediction step is responsible for iterating through all the possible locations the robot may have been in, and calculating a belief that a given action might have led to the current location of the robot. There are six for loops implemented in the prediction step: previous x, y, θ and current x, y, and θ. 
 
-<img src="../images/Lab11/prediction.JPG" width="150" alt="image1" class="inline"/>
+<img src="../images/Lab11/prediction.JPG" width="200" alt="image1" class="inline"/>
 
 ```
 def prediction_step(cur_odom, prev_odom):
@@ -116,7 +116,7 @@ def prediction_step(cur_odom, prev_odom):
 
 The sensor model is responsible for computing the probable correctness of the actual sensor reading based on the robot’s current position. A gaussian function is utilized to characterize the probability of the sensor readings. 
 
-<img src="../images/Lab11/sensor.JPG" width="150" alt="image1" class="inline"/>
+<img src="../images/Lab11/sensor.JPG" width="200" alt="image1" class="inline"/>
 
 ```
 def sensor_model(zt,xt):
@@ -136,7 +136,7 @@ def sensor_model(zt,xt):
 
 The update step performs an iteration through the grid and generates the probability that the observations match the cell from which they are obtained. The intermediate belief for every possible pose is multiplied by the probability of the sensor reading’s accuracy at that given pose. Based on this information, the belief is updated.  
 
-<img src="../images/Lab11/sensor.JPG" width="150" alt="image1" class="inline"/>
+<img src="../images/Lab11/update.JPG" width="200" alt="image1" class="inline"/>
 
 ```
 def update_step():
@@ -153,9 +153,9 @@ def update_step():
 
 #### Results
 
-The virtual robot is ran on a pre-set trajectory while incorporating the Bayes filter algorithm including an observation cycle, prediction cycle, and an update step in between points. The ground truth is highlighted in yellow, odometry data in red, and belief in blue. It is eviden that the belief is closely representative of the ground truth, signalling that the Bayes filter is quite accurate. The shaded tiles represent the probability (more white = more probable) of the robot’s next position based on the accumulated data. 
+The virtual robot is ran on a pre-set trajectory while incorporating the Bayes filter algorithm including an observation cycle, prediction cycle, and an update step in between points. The ground truth is highlighted in yellow, odometry data in red, and belief in blue. It is evident that the belief is closely representative of the ground truth, signaling that the Bayes filter is quite accurate. The shaded tiles represent the probability (more white = more probable) of the robot’s next position based on the accumulated data. 
 
-<img src="../images/Lab11/sensor.JPG" width="150" alt="image1" class="inline"/>
+<img src="../images/Lab11/graph.JPG" width="300" alt="image1" class="inline"/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u5isrmLjjs0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -163,7 +163,7 @@ The virtual robot is ran on a pre-set trajectory while incorporating the Bayes f
 
 ## IV. Conclusion
 
-The objective of this lab, to implement grid localization using Bayes filter, is successfully satisfied. Several issues regarding the understanding and the implemetnion of the algorithm in Pythnon were faced during the lab. However, the staff did a great job of explaining the concepts and assisting in debugging errors. This was a very challenging lab, but it provided great knowledge on implementing Bayes filters for robotics. 
+The objective of this lab, to implement grid localization using Bayes filter, is successfully satisfied. Several issues regarding the understanding and the implementing of the algorithm in Python were faced during the lab. However, the staff did a great job of explaining the concepts and assisting in debugging errors. This was a very challenging lab, but it provided great knowledge on implementing Bayes filters for robotics. 
 
 ---
 

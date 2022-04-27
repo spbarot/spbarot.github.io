@@ -135,7 +135,7 @@ while cmdr.sim_is_running() and cmdr.plotter_is_running():
 
 ## IV. Conclusion
 
-The objective of this lab, to implement grid localization using Bayes filter, is successfully satisfied. Several issues regarding the understanding and the implementing of the algorithm in Python were faced during the lab. However, the staff did a great job of explaining the concepts and assisting in debugging errors. This was a very challenging lab, but it provided great knowledge on implementing Bayes filters for robotics. 
+The objective of this lab, to implement open loop and closed loop control in the simulator, is successfully satisfied. Overall, this lab was very fun to design and there were not any major issues faced in this lab as the guideline and the notebook were very clear. The knowledge gained in this lab regarding the simulation environment will highly assist in Lab 11. 
 
 ---
 
@@ -146,6 +146,5 @@ The objective of this lab, to implement grid localization using Bayes filter, is
 ---
 
 [Return to Main Page](https://spbarot.github.io/)
-
 
 

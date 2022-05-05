@@ -31,7 +31,7 @@ Lab 11 Bayes filter implementation and the provided optimized Bayes filter imple
 * (5 ft ,3 ft ,0 deg)
 <br>
 
-At the abovementioned locations, the Tof sensors shall take 18 sensor readings at 20 degree increments starting from 0 degrees to 340 degrees (0, 20, 40, …, 340). These readings shall be passed into the RealRobot class module in Python where the 18 sensor readings are stored and utilized in the update step to determine the robot’s current location and belief level. 
+At the abovementioned locations, the Tof sensors shall take 18 sensor readings at 20 degree increments starting from 0 degrees to 340 degrees (0, 20, 40, …, 340). These readings shall be passed into the RealRobot class module in Python where the 18 sensor readings are stored and utilized in the update step to determine the robot’s belief level and current position. 
 
 ---
 
@@ -43,19 +43,18 @@ The provided localization implementation is first tested to confirm capability, 
 
 ---
 
-
-
 #### Task 2 – Update Step on Real Robot 
 
+Task 2 involves running the update step using the ToF sensor readings to localize the robot on the map. This involves implementing PID control with the gyroscope so that 18 sensor readings at 20 degree increments starting from 0 degrees to 340 degrees (0, 20, 40, …, 340). This was exactly implemented by enabling the robot to turn smoothly for 360 degrees and taking sensor readings at 20 degree increments. These sensor values and the associated rotation values are then stored in an array and passed into the RealRobot class module in Python so that the robot’s belief location can be determined. 
 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uWDAeCTHezg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<img src="../images/Lab12/0,3.jpg" width="500" alt="image1" class="inline"/>
-<img src="../images/Lab12/-3,-2.jpg" width="500" alt="image1" class="inline"/>
-<img src="../images/Lab12/5,3.jpg" width="500" alt="image1" class="inline"/>
-<img src="../images/Lab12/5,-3.jpg" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab12/0,3.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab12/-3,-2.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab12/5,3.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab12/5,-3.png" width="500" alt="image1" class="inline"/>
 
 
 
@@ -77,4 +76,6 @@ Pillai, Nikhil
 ---
 
 [Return to Main Page](https://spbarot.github.io/)
+
+
 

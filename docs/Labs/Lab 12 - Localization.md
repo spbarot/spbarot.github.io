@@ -50,13 +50,19 @@ Task 2 involves running the update step using the ToF sensor readings to localiz
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uWDAeCTHezg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
+(0,3)
 <img src="../images/Lab12/0,3.png" width="500" alt="image1" class="inline"/>
+<br>
+(-3,-2)
 <img src="../images/Lab12/-3,-2.png" width="500" alt="image1" class="inline"/>
+<br>
+(5,3)
 <img src="../images/Lab12/5,3.png" width="500" alt="image1" class="inline"/>
+<br>
+(5,-3)
 <img src="../images/Lab12/5,-3.png" width="500" alt="image1" class="inline"/>
-
-
 
 ---
 

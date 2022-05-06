@@ -59,39 +59,45 @@ Once the robot is able to capture and transmit readings adequately, the Lab 12 (
 
 <img src="../images/Lab12/py.png" width="500" alt="image1" class="inline"/>
 
-<br>
+---
 
 (0,3)
 
 <img src="../images/Lab12/0,3.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab12/0_3_.JPG" width="500" alt="image1" class="inline"/>
+
 For this position, the robot belief happens to be at (-1,4) with a probability of 0.99. The reason for this may have been the inaccuracy of the ToF sensors which captured wrong readings, allowing the robot to believe it is in fact in a different position. Another reason for this inaccuracy could have been the fact that the robot gyroscope integration may not have been fully precise, causing the readings at the 20 degree intervals to be off. One way to combat this issue would have been to stop the robot at each 20 degree increment and then take the sensor readings, instead of constantly rotating the robot. It is also odd that the probability is 0.99 but the TAs mentioned that most beliefs, even if incorrect, happen to be 0.99. 
 
 
-<br>
+---
 
 
 (-3,-2)
 
 <img src="../images/Lab12/-3,-2.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab12/-3_-2_.JPG" width="500" alt="image1" class="inline"/>
 
 For this position, the robot belief happens to be accurate, with a probability of 1.00. 
 
-<br>
+---
 
 (5,3)
 
 <img src="../images/Lab12/5,3.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab12/5_3_.JPG" width="500" alt="image1" class="inline"/>
 
 For this position, the robot belief happens to be (6,2), making it inaccurate, with a probability of 0.99. 
 
-<br>
+---
 
 (5,-3)
 
 <img src="../images/Lab12/5,-3.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab12/5_-3_.JPG" width="500" alt="image1" class="inline"/>
 
 For this position, the robot belief happens to be accurate, with a probability of 0.99. 
-<br>
+
+---
 
 Localization Summary 
 

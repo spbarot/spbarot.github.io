@@ -54,21 +54,25 @@ Task 2 involves running the update step using the ToF sensor readings to localiz
 <br>
 
 (0,3)
+
 <img src="../images/Lab12/0,3.png" width="500" alt="image1" class="inline"/>
 
 <br>
 
 (-3,-2)
+
 <img src="../images/Lab12/-3,-2.png" width="500" alt="image1" class="inline"/>
 
 <br>
 
 (5,3)
+
 <img src="../images/Lab12/5,3.png" width="500" alt="image1" class="inline"/>
 
 <br>
 
 (5,-3)
+
 <img src="../images/Lab12/5,-3.png" width="500" alt="image1" class="inline"/>
 
 ---

@@ -45,17 +45,26 @@ The provided localization implementation is first tested to confirm capability, 
 
 #### Task 2 – Update Step on Real Robot 
 
-Task 2 involves running the update step using the ToF sensor readings to localize the robot on the map. This involves implementing PID control with the gyroscope so that 18 sensor readings at 20 degree increments starting from 0 degrees to 340 degrees (0, 20, 40, …, 340). This was exactly implemented by enabling the robot to turn smoothly for 360 degrees and taking sensor readings at 20 degree increments. These sensor values and the associated rotation values are then stored in an array and passed into the RealRobot class module in Python so that the robot’s belief location can be determined. 
+Task 2 involves running the update step using the ToF sensor readings to localize the robot on the map. This involves implementing PID control with the gyroscope so that 18 sensor readings at 20 degree increments starting from 0 degrees to 340 degrees (0, 20, 40, …, 340). This was implemented by enabling the robot to turn slowly and smoothly for 360 degrees and taking sensor readings at 20 degree increments. To capture distance readings every 20 degrees, the gyroscope values needed to be integrated. This was done by adding the multiplying the current_rotation (radians/second) by current_time – previous_time, and summating all the current_rotation values.  These sensor values and the associated rotation values are then stored in an array and passed into the RealRobot class module in Python so that the robot’s belief location can be determined. The image below displays the code used for turning the robot (PID) to gain readings. One of the adjustments we had to make was programming the robot to stop if the current angle is between 350 degrees and 370 degrees. This was done to ensure that the robot will stop even if it does not calculate an exactly 360 degrees turn. 
 
+<img src="../images/Lab12/pid.png" width="500" alt="image1" class="inline"/>
 
+<br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uWDAeCTHezg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+Once the robot is able to capture and transmit readings adequately, the Lab 12 (Real) Jupyter Lab framework is setup to receive the readings, parse the data (ToF values, angle values), and feed the ToF readings to the perform_observation_loop function. As seen in the image below, there was a need to process and omit some reoccurring data. This was so as the robot would send multiple ToF readings for each 20 degrees increment. The processing omits multiple sensor readings at the same degree increment. Once the data is processed, it is send to the perform_observation_loop function as a np array. The program calculated the new belief position and probability for the four points on the map which is displayed in the images below.
+
+<img src="../images/Lab12/py.png" width="500" alt="image1" class="inline"/>
 
 <br>
 
 (0,3)
 
 <img src="../images/Lab12/0,3.png" width="500" alt="image1" class="inline"/>
+For this position, the robot belief happens to be at (-1,4) with a probability of 0.99. The reason for this may have been the inaccuracy of the ToF sensors which captured wrong readings, allowing the robot to believe it is in fact in a different position. Another reason for this inaccuracy could have been the fact that the robot gyroscope integration may not have been fully precise, causing the readings at the 20 degree intervals to be off. One way to combat this issue would have been to stop the robot at each 20 degree increment and then take the sensor readings, instead of constantly rotating the robot. It is also odd that the probability is 0.99 but the TAs mentioned that most beliefs, even if incorrect, happen to be 0.99. 
 
 <br>
 
@@ -63,17 +72,30 @@ Task 2 involves running the update step using the ToF sensor readings to localiz
 
 <img src="../images/Lab12/-3,-2.png" width="500" alt="image1" class="inline"/>
 
+For this position, the robot belief happens to be accurate, with a probability of 1.00. 
+
 <br>
 
 (5,3)
 
 <img src="../images/Lab12/5,3.png" width="500" alt="image1" class="inline"/>
 
+For this position, the robot belief happens to be (6,2), making it inaccurate, with a probability of 0.99. 
+
 <br>
 
 (5,-3)
 
 <img src="../images/Lab12/5,-3.png" width="500" alt="image1" class="inline"/>
+
+For this position, the robot belief happens to be accurate, with a probability of 0.99. 
+<br>
+
+Localization Summary 
+
+<br>
+
+<img src="../images/Lab12/summary.JPG" width="500" alt="image1" class="inline"/>
 
 ---
 

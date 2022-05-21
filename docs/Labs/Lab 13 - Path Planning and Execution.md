@@ -128,15 +128,15 @@ The turnback function in Jupyter orients the robot to the “0” direction so t
 
 #### Results 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QXOUww6Jfe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GLX7j7TNE9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QXOUww6Jfe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jDliG3fiCXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QXOUww6Jfe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vB2Yq-hQNg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ---
@@ -145,7 +145,7 @@ The turnback function in Jupyter orients the robot to the “0” direction so t
 
 There were several issues faced in this lab as this was the toughest lab of the course. The primary issue we faced was the BLE connection. After a certain time (~90 seconds) the BLE connection times out. Since our BLE signals the Artemis the next rotation and translation angles, this problem is monumental and causes the robot to crash. Since the entire trajectory took about 140 seconds to complete, the program would lose BLE connection and time out, causing the robot to crash. Therefore, we decided to split the trajectory into two runs filmed separately (Part 1 and Part 2). Upon consulting a TA, it was found that this is a known Mac issue. Below is a clip of what the BLE timeout error looks like. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QXOUww6Jfe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NgyEgFVPRMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <br>

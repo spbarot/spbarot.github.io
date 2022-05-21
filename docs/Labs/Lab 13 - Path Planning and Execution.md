@@ -10,7 +10,7 @@ title: Lab 13 – Path Planning and Execution
 
 The primary objective of this lab is to enable the robot to navigate through a set of waypoints shown below. The lab is designed to be very open ended allowing experimenters to use several concepts discussed and implemented in the course such as open loop, closed loop, PID, mapping, localization, and off-board commands. 
 
-<img src="../images/Lab13/waypoint.JPG" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab13/waypoints.JPG" width="500" alt="image1" class="inline"/>
 
 ---
 
@@ -118,11 +118,30 @@ void turn_degrees(float deg){
 
 Jupyter is used in this lab to provide pings to the Artemis with the translation and rotation information. To carry this out, we made a python class “Traj” that takes in 5 values (x1, x2, y1, y2, orientation) and calculates the translation between the two points using translation function and the angle between the two points using the angle function seen in the code snippet below. 
 
-<br>
-
 The turnback function in Jupyter orients the robot to the “0” direction so that the next rotation and translation can be performed. The perform_trajectory function cycles through all the waypoints defined in the class Traj one by one, and outputs the next turn angle or the next translation distance via BLE pings. We used asyncio sleep functions to give the robot enough time to rotate/turn before the next ping is sent to the Artemis. 
 
-<img src="../images/Lab13/jupyter.png" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab13/jupyter.png" width="800" alt="image1" class="inline"/>
+
+#### Issues Faced
+
+There were several issues faced in this lab as this was the toughest lab of the course. The primary issue we faced was the BLE connection. After a certain time (~90 seconds) the BLE connection times out. Since our BLE signals the Artemis the next rotation and translation angles, this problem is monumental and causes the robot to crash. Since the entire trajectory took about 140 seconds to complete, the program would lose BLE connection and time out, causing the robot to crash. Therefore, we decided to split the trajectory into two runs filmed separately (Part 1 and Part 2). Upon consulting a TA, it was found that this is a known Mac issue. Below is a clip of what the BLE timeout error looks like. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NgyEgFVPRMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<br>
+
+The other prominent issue we faced during this lab was the inaccuracy of the ToF sensor. Several times during a run, the ToF sensor would output wrong distance readings. This was discovered by tethering the robot and reading the distance values in the serial monitor. Due to this issue, the ToF readings from the first point were very inaccurate due to the long distance to the point across the map and the slanted angle. Because the inaccurate readings, the robot would calculate an inaccurate setpoint, causing the translation to fail. To combat this issue, we started on the second point and ended on the first point. Generally, it was a matter of getting lucky and hoping the distance sensor reads the correct values at each waypoint. 
+
+Another major issue we faced was the pre-caching of the ToF sensor. The ToF sensor outputted the distance value that was taken from the previous compilation. Eventually, we found that this happened because the distance sensor data was not ready and therefore it kept outputting previous values. To ensure the data would be ready, we used the following code which checks if the data is ready. 
+
+```
+while (!distanceSensor.checkForDataReady() && cent.connected()){
+      delay(1);    }
+```
+
+---
+
 
 ---
 
@@ -141,27 +160,6 @@ The turnback function in Jupyter orients the robot to the “0” direction so t
 
 ---
 
-#### Issues Faced
-
-There were several issues faced in this lab as this was the toughest lab of the course. The primary issue we faced was the BLE connection. After a certain time (~90 seconds) the BLE connection times out. Since our BLE signals the Artemis the next rotation and translation angles, this problem is monumental and causes the robot to crash. Since the entire trajectory took about 140 seconds to complete, the program would lose BLE connection and time out, causing the robot to crash. Therefore, we decided to split the trajectory into two runs filmed separately (Part 1 and Part 2). Upon consulting a TA, it was found that this is a known Mac issue. Below is a clip of what the BLE timeout error looks like. 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NgyEgFVPRMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<br>
-
-The other prominent issue we faced during this lab was the inaccuracy of the ToF sensor. Several times during a run, the ToF sensor would output wrong distance readings. This was discovered by tethering the robot and reading the distance values in the serial monitor. Due to this issue, the ToF readings from the first point were very inaccurate due to the long distance to the point across the map and the slanted angle. Because the inaccurate readings, the robot would calculate an inaccurate setpoint, causing the translation to fail. To combat this issue, we started on the second point and ended on the first point. Generally, it was a matter of getting lucky and hoping the distance sensor reads the correct values at each waypoint. 
-
-<br>
-
-Another major issue we faced was the pre-caching of the ToF sensor. The ToF sensor outputted the distance value that was taken from the previous compilation. Eventually, we found that this happened because the distance sensor data was not ready and therefore it kept outputting previous values. To ensure the data would be ready, we used the following code which checks if the data is ready. 
-
-```
-while (!distanceSensor.checkForDataReady() && cent.connected()){
-      delay(1);    }
-```
-
----
 
 ## IV. Conclusion
 

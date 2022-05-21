@@ -25,4 +25,4 @@ ECE 5960 - Design and Implementation of Fast Robots focuses on systems level des
 [Lab 10 - Simulator](./Labs/Lab 10 - Simulator.md) <br/>
 [Lab 11 - Grid Localization Using Bayes Filter](./Labs/Lab 11 - Grid Localization Using Bayes Filter) <br/>
 [Lab 12 - Localization (Real)](./Labs/Lab 12 - Localization.md) <br/>
-
+[Lab 13 - Path Planning and Execution](./Labs/Lab 13 - Path Planning and Execution.md) <br/>

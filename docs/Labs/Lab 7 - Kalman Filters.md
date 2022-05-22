@@ -156,20 +156,12 @@ void kf_pid(){
     currentMillis = millis();
     timerCountCurrent = millis();
     kf_func(distance, pwm_val);
-    //Serial.println(x_val(0,0)*-1);
-    //float speed_val = setSpeed_val(PID_pass(currentMillis, previousMillis, error_previous, ((x_val(0,0)*-1) - setPoint)));
     setSpeed_val(PID_pass(currentMillis, previousMillis, error_previous, ((x_val(0,0)*-1) - setPoint)));
-    Serial.println("PID PASS: ");
-    Serial.println(PID_pass(currentMillis, previousMillis, error_previous, ((x_val(0,0)*-1) - setPoint)));
-    Serial.println(setSpeed_val(PID_pass(currentMillis, previousMillis, error_previous, ((x_val(0,0)*-1) - setPoint))));
-    //Serial.println("SPEED VAL: ");
-    //Serial.println(speed_val);
     error_previous = (x_val(0,0)*-1) - setPoint;
-    //pwm_val = speed_val/60;
     if (timerCountCurrent - timerCountPrevious > interval){
       if (counter_h < 1000 ){
         tof_values[counter_h] = distance; //Get the result of the measurement from the sensor
-        //Serial.println(tof_values[counter_h]);
+        
         timeValues[counter_h] = currentMillis;
         pid_out[counter_h] = setSpeed_val(PID_pass(currentMillis, previousMillis, error_previous, ((x_val(0,0)*-1) - setPoint)));;//speed_val;
       }else if (counter_h == 1000){
@@ -182,10 +174,10 @@ void kf_pid(){
 }
 ```
 
-	
+Below are the distance vs time and PWM vs time graphs as well as the video of the Kalman Filter implemented PID control. The motion is a lot smoother and faster due to the Kalman Filter and the robot is extremely close to the setpoint of 300 mm.
 
-<img src="../images/Lab7/kf_check_3.JPG" width="500" alt="image1" class="inline"/>
-<img src="../images/Lab7/kf_check_3.JPG" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab7/robot_1.JPG" width="500" alt="image1" class="inline"/>
+<img src="../images/Lab7/robot_2.JPG" width="500" alt="image1" class="inline"/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IdLj2RFyy4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -194,7 +186,7 @@ void kf_pid(){
 
 
 ## IV. Conclusion
-The objective of this lab, to implement a Kalman Filter on the robot was successfully satisfied. There were several issues faced during the lab such as hardware faults, software bugs (BLE and hardfaults). Overcoming these challenges was very satisfying and the knowledge gained from this lab in regards to programming the Artemis, interfacing with the motor drivers and sensors, and implementing PID control will be very useful in the future labs. The Lab 7 guideline as well as the staff was also extremely helpful during the lab. 
+The objective of this lab, to implement a Kalman Filter on the robot was successfully satisfied. There were several issues faced during the lab such as hardware faults, software bugs (BLE and hardfaults). Overcoming these challenges was very satisfying and the knowledge gained from this lab in regards to implementing the Kalman Filter will be very useful in the future labs. The Lab 7 guideline as well as the staff was also extremely helpful during the lab. 
 
 ---
 

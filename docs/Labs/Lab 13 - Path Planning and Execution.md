@@ -32,6 +32,9 @@ To enable the robot to effectively navigate through the set of waypoints shown a
 * Use closed loop feedback control (PID) for rotation and rotate towards the 0 direction
 * Get an automized command from Jupyter Lab (for loop) to move towards next point
 
+Below is a diagram that showcases how the Arduino and Jupyter communicate to enable to robot to move through the map. 
+<img src="../images/Lab13/logic.JPG" width="500" alt="image1" class="inline"/>
+
 ---
 
 #### Implementation Selection
